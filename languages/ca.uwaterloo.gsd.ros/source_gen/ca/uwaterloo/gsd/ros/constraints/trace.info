@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="9,0,23,0" name="ca.uwaterloo.gsd.ros.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:93e3f8eb-6880-46de-92f7-ff448c6725c8(ca.uwaterloo.gsd.ros.constraints)/1139250107225929395">
+    <file name="MessageSingleLineComment_Constraints.java">
+      <node id="1139250107225929395" at="16,49,17,98" concept="6" />
+      <node id="1139250107225929395" at="20,88,21,123" concept="4" />
+      <node id="1139250107225929395" at="24,37,25,20" concept="5" />
+      <node id="1139250107225929395" at="28,42,29,37" concept="4" />
+      <node id="1139250107225929395" at="29,37,30,67" concept="0" />
+      <node id="5648770916613229002" at="29,37,30,67" concept="5" />
+      <node id="1139250107225929395" at="32,7,33,22" concept="5" />
+      <node id="1139250107225929395" at="16,0,19,0" concept="1" trace="MessageSingleLineComment_Constraints#()V" />
+      <node id="1139250107225929395" at="23,0,27,0" concept="3" trace="hasOwnGetter#()Z" />
+      <node id="1139250107225929395" at="27,0,32,0" concept="3" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <node id="1139250107225929395" at="21,123,32,7" concept="2" />
+      <node id="1139250107225929395" at="19,0,35,0" concept="3" trace="getNotDefaultSProperties#()Ljava/util/Map;" />
+      <scope id="1139250107225929395" at="16,49,17,98" />
+      <scope id="1139250107225929395" at="24,37,25,20" />
+      <scope id="5648770916613228928" at="29,37,30,67" />
+      <scope id="1139250107225929395" at="28,42,30,67">
+        <var name="propertyName" id="1139250107225929395" />
+      </scope>
+      <scope id="1139250107225929395" at="16,0,19,0" />
+      <scope id="1139250107225929395" at="23,0,27,0" />
+      <scope id="1139250107225929395" at="27,0,32,0">
+        <var name="node" id="1139250107225929395" />
+      </scope>
+      <scope id="1139250107225929395" at="20,88,33,22">
+        <var name="properties" id="1139250107225929395" />
+      </scope>
+      <scope id="1139250107225929395" at="19,0,35,0" />
+      <unit id="1139250107225929395" at="22,119,32,5" name="ca.uwaterloo.gsd.ros.constraints.MessageSingleLineComment_Constraints$1" />
+      <unit id="1139250107225929395" at="15,0,36,0" name="ca.uwaterloo.gsd.ros.constraints.MessageSingleLineComment_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:93e3f8eb-6880-46de-92f7-ff448c6725c8(ca.uwaterloo.gsd.ros.constraints)/4650928565438111943">
+    <file name="EmptyMessageContent_Constraints.java">
+      <node id="4650928565438111943" at="16,44,17,97" concept="6" />
+      <node id="4650928565438111943" at="20,88,21,123" concept="4" />
+      <node id="4650928565438111943" at="24,37,25,20" concept="5" />
+      <node id="4650928565438111943" at="28,42,29,37" concept="4" />
+      <node id="4650928565438111943" at="29,37,30,65" concept="0" />
+      <node id="4650928565438111988" at="29,37,30,65" concept="5" />
+      <node id="4650928565438111943" at="32,7,33,22" concept="5" />
+      <node id="4650928565438111943" at="16,0,19,0" concept="1" trace="EmptyMessageContent_Constraints#()V" />
+      <node id="4650928565438111943" at="23,0,27,0" concept="3" trace="hasOwnGetter#()Z" />
+      <node id="4650928565438111943" at="27,0,32,0" concept="3" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <node id="4650928565438111943" at="21,123,32,7" concept="2" />
+      <node id="4650928565438111943" at="19,0,35,0" concept="3" trace="getNotDefaultSProperties#()Ljava/util/Map;" />
+      <scope id="4650928565438111943" at="16,44,17,97" />
+      <scope id="4650928565438111943" at="24,37,25,20" />
+      <scope id="4650928565438111947" at="29,37,30,65" />
+      <scope id="4650928565438111943" at="28,42,30,65">
+        <var name="propertyName" id="4650928565438111943" />
+      </scope>
+      <scope id="4650928565438111943" at="16,0,19,0" />
+      <scope id="4650928565438111943" at="23,0,27,0" />
+      <scope id="4650928565438111943" at="27,0,32,0">
+        <var name="node" id="4650928565438111943" />
+      </scope>
+      <scope id="4650928565438111943" at="20,88,33,22">
+        <var name="properties" id="4650928565438111943" />
+      </scope>
+      <scope id="4650928565438111943" at="19,0,35,0" />
+      <unit id="4650928565438111943" at="22,119,32,5" name="ca.uwaterloo.gsd.ros.constraints.EmptyMessageContent_Constraints$1" />
+      <unit id="4650928565438111943" at="15,0,36,0" name="ca.uwaterloo.gsd.ros.constraints.EmptyMessageContent_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

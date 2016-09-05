@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/ca.uwaterloo.gsd.ros/ca.uwaterloo.gsd.ros.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/ca.uwaterloo.gsd.ros/sandbox/ca.uwaterloo.gsd.ros.sandbox.msd" folder="" />
+    </projectModules>
+  </component>
+</project>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="ca.uwaterloo.gsd.ros.Language" file="Language.java">
+    <classNode dependClassName="ca.uwaterloo.gsd.ros.actions.ActionAspectDescriptorImpl" />
+    <classNode dependClassName="ca.uwaterloo.gsd.ros.behavior.BehaviorAspectDescriptor" />
+    <classNode dependClassName="ca.uwaterloo.gsd.ros.constraints.ConstraintsAspectDescriptor" />
+    <classNode dependClassName="ca.uwaterloo.gsd.ros.editor.EditorAspectDescriptorImpl" />
+    <classNode dependClassName="ca.uwaterloo.gsd.ros.structure.StructureAspectDescriptor" />
+    <classNode dependClassName="ca.uwaterloo.gsd.ros.textGen.TextGenAspectDescriptor" />
+    <classNode dependClassName="java.lang.Class" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="java.util.UUID" />
+    <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateModule" />
+    <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateUtil" />
+    <classNode dependClassName="jetbrains.mps.openapi.actions.descriptor.ActionAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.ILanguageAspect" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenAspectDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.language.LanguageRuntime" />
+  </dependency>
+</dependenciesRoot>
+

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.SwitchStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.WhileStatement" />
+  <root>
+    <file name="BehaviorAspectDescriptor.java">
+      <unit at="14,0,42,0" name="ca.uwaterloo.gsd.ros.behavior.BehaviorAspectDescriptor" />
+    </file>
+    <file name="EmptyMessageContent_BehaviorDescriptor.java">
+      <unit at="16,0,52,0" name="ca.uwaterloo.gsd.ros.behavior.EmptyMessageContent_BehaviorDescriptor" />
+    </file>
+    <file name="IElement_BehaviorDescriptor.java">
+      <unit at="13,0,16,0" name="ca.uwaterloo.gsd.ros.behavior.IElement_BehaviorDescriptor" />
+    </file>
+    <file name="MessageSingleLineComment_BehaviorDescriptor.java">
+      <unit at="15,0,48,0" name="ca.uwaterloo.gsd.ros.behavior.MessageSingleLineComment_BehaviorDescriptor" />
+    </file>
+    <file name="Message_BehaviorDescriptor.java">
+      <unit at="16,0,40,0" name="ca.uwaterloo.gsd.ros.behavior.Message_BehaviorDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:b0faaa88-dc78-4f2c-8707-1d0e97d6b502(ca.uwaterloo.gsd.ros.behavior)/1139250107225574225">
+    <file name="Message_Behavior.java">
+      <unit id="1139250107225574225" at="10,0,13,0" name="ca.uwaterloo.gsd.ros.behavior.Message_Behavior" />
+    </file>
+    <file name="Message__BehaviorDescriptor.java">
+      <node id="1139250107225574225" at="25,0,26,0" concept="8" trace="CONCEPT" />
+      <node id="1139250107225574225" at="26,0,27,0" concept="8" trace="REGISTRY" />
+      <node id="1139250107225574225" at="28,0,29,0" concept="8" trace="getIDEDisplayString_idIviauXb0g" />
+      <node id="1139250107225574225" at="29,0,30,0" concept="8" trace="getParentPopup_id1uL8CIsKxiy" />
+      <node id="1139250107225574225" at="30,0,31,0" concept="8" trace="getSortOrder_id1uL8CIs6rGR" />
+      <node id="1139250107225574225" at="31,0,32,0" concept="8" trace="getUniquelyNamedElements_id4qSf1u1TRfj" />
+      <node id="1139250107225574225" at="33,0,34,0" concept="8" trace="BH_METHODS" />
+      <node id="204078314067568418" at="38,90,39,25" concept="6" />
+      <node id="204078314067568493" at="41,87,42,16" concept="6" />
+      <node id="204078314067568508" at="44,82,45,13" concept="6" />
+      <node id="1139250107225578098" at="47,106,48,185" concept="6" />
+      <node id="1139250107225574225" at="51,45,52,20" concept="10" />
+      <node id="1139250107225574225" at="56,114,57,21" concept="2" />
+      <node id="1139250107225574225" at="61,114,62,49" concept="5" />
+      <node id="1139250107225574225" at="63,26,64,56" concept="12" />
+      <node id="1139250107225574225" at="67,13,68,68" concept="6" />
+      <node id="1139250107225574225" at="69,13,70,65" concept="6" />
+      <node id="1139250107225574225" at="71,13,72,64" concept="6" />
+      <node id="1139250107225574225" at="73,13,74,84" concept="6" />
+      <node id="1139250107225574225" at="75,14,76,58" concept="12" />
+      <node id="1139250107225574225" at="81,128,82,49" concept="5" />
+      <node id="1139250107225574225" at="83,26,84,56" concept="12" />
+      <node id="1139250107225574225" at="87,14,88,58" concept="12" />
+      <node id="1139250107225574225" at="94,48,95,22" concept="6" />
+      <node id="1139250107225574225" at="100,40,101,19" concept="6" />
+      <node id="1139250107225574225" at="35,0,37,0" concept="9" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1139250107225574225" at="38,0,41,0" concept="9" trace="getIDEDisplayString_idIviauXb0g#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="1139250107225574225" at="41,0,44,0" concept="9" trace="getParentPopup_id1uL8CIsKxiy#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="1139250107225574225" at="44,0,47,0" concept="9" trace="getSortOrder_id1uL8CIs6rGR#(Lorg/jetbrains/mps/openapi/model/SNode;)I" />
+      <node id="1139250107225574225" at="47,0,50,0" concept="9" trace="getUniquelyNamedElements_id4qSf1u1TRfj#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
+      <node id="1139250107225574225" at="51,0,54,0" concept="1" trace="Message__BehaviorDescriptor#()V" />
+      <node id="1139250107225574225" at="62,49,65,5" concept="3" />
+      <node id="1139250107225574225" at="82,49,85,5" concept="3" />
+      <node id="1139250107225574225" at="55,0,59,0" concept="4" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
+      <node id="1139250107225574225" at="85,5,89,5" concept="11" />
+      <node id="1139250107225574225" at="92,0,97,0" concept="4" trace="getDeclaredMethods#()Ljava/util/List;" />
+      <node id="1139250107225574225" at="98,0,103,0" concept="4" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1139250107225574225" at="80,0,91,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="1139250107225574225" at="65,5,77,5" concept="11" />
+      <node id="1139250107225574225" at="60,0,79,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <scope id="1139250107225574225" at="35,63,35,63" />
+      <scope id="204078314067567986" at="38,90,39,25" />
+      <scope id="204078314067567992" at="41,87,42,16" />
+      <scope id="204078314067567998" at="44,82,45,13" />
+      <scope id="7424246677466427600" at="47,106,48,185" />
+      <scope id="1139250107225574225" at="51,45,52,20" />
+      <scope id="1139250107225574225" at="56,114,57,21" />
+      <scope id="1139250107225574225" at="63,26,64,56" />
+      <scope id="1139250107225574225" at="67,13,68,68" />
+      <scope id="1139250107225574225" at="69,13,70,65" />
+      <scope id="1139250107225574225" at="71,13,72,64" />
+      <scope id="1139250107225574225" at="73,13,74,84" />
+      <scope id="1139250107225574225" at="75,14,76,58" />
+      <scope id="1139250107225574225" at="83,26,84,56" />
+      <scope id="1139250107225574225" at="87,14,88,58" />
+      <scope id="1139250107225574225" at="94,48,95,22" />
+      <scope id="1139250107225574225" at="100,40,101,19" />
+      <scope id="1139250107225574225" at="35,0,37,0">
+        <var name="__thisNode__" id="1139250107225574225" />
+      </scope>
+      <scope id="1139250107225574225" at="38,0,41,0">
+        <var name="__thisNode__" id="1139250107225574225" />
+      </scope>
+      <scope id="1139250107225574225" at="41,0,44,0">
+        <var name="__thisNode__" id="1139250107225574225" />
+      </scope>
+      <scope id="1139250107225574225" at="44,0,47,0">
+        <var name="__thisNode__" id="1139250107225574225" />
+      </scope>
+      <scope id="1139250107225574225" at="47,0,50,0">
+        <var name="__thisNode__" id="1139250107225574225" />
+      </scope>
+      <scope id="1139250107225574225" at="51,0,54,0" />
+      <scope id="1139250107225574225" at="55,0,59,0">
+        <var name="constructor" id="1139250107225574225" />
+        <var name="node" id="1139250107225574225" />
+        <var name="parameters" id="1139250107225574225" />
+      </scope>
+      <scope id="1139250107225574225" at="92,0,97,0" />
+      <scope id="1139250107225574225" at="98,0,103,0" />
+      <scope id="1139250107225574225" at="81,128,89,5">
+        <var name="methodIndex" id="1139250107225574225" />
+      </scope>
+      <scope id="1139250107225574225" at="80,0,91,0">
+        <var name="concept" id="1139250107225574225" />
+        <var name="method" id="1139250107225574225" />
+        <var name="parameters" id="1139250107225574225" />
+      </scope>
+      <scope id="1139250107225574225" at="61,114,77,5">
+        <var name="methodIndex" id="1139250107225574225" />
+      </scope>
+      <scope id="1139250107225574225" at="60,0,79,0">
+        <var name="method" id="1139250107225574225" />
+        <var name="node" id="1139250107225574225" />
+        <var name="parameters" id="1139250107225574225" />
+      </scope>
+      <unit id="1139250107225574225" at="24,0,104,0" name="ca.uwaterloo.gsd.ros.behavior.Message__BehaviorDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:b0faaa88-dc78-4f2c-8707-1d0e97d6b502(ca.uwaterloo.gsd.ros.behavior)/5648770916613557848">
+    <file name="MessageSingleLineCommentUtil.java">
+      <node id="8031002466230319696" at="16,91,17,0" concept="7" />
+      <node id="8031002466230282594" at="17,0,18,230" concept="5" />
+      <node id="8031002466230282603" at="19,33,20,13" concept="6" />
+      <node id="8031002466230282632" at="21,5,22,0" concept="7" />
+      <node id="8031002466230282633" at="22,0,23,87" concept="5" />
+      <node id="8031002466230282642" at="23,87,24,54" concept="5" />
+      <node id="8031002466230282648" at="24,54,25,39" concept="5" />
+      <node id="8031002466230282654" at="25,39,26,55" concept="5" />
+      <node id="8031002466230282662" at="26,55,27,53" concept="5" />
+      <node id="8031002466230963014" at="27,53,28,0" concept="7" />
+      <node id="8031002466230282682" at="28,0,29,63" concept="5" />
+      <node id="8031002466230282607" at="30,290,31,249" concept="5" />
+      <node id="8031002466230282613" at="31,249,32,74" concept="2" />
+      <node id="8031002466230282619" at="33,58,34,249" concept="5" />
+      <node id="8031002466230282625" at="34,249,35,239" concept="2" />
+      <node id="8031002466230963146" at="35,239,36,0" concept="7" />
+      <node id="8031002466230282669" at="36,0,37,172" concept="2" />
+      <node id="8031002466230282675" at="37,172,38,183" concept="2" />
+      <node id="8031002466231013908" at="39,7,40,0" concept="7" />
+      <node id="8031002466230282702" at="41,246,42,254" concept="5" />
+      <node id="8031002466230282712" at="42,254,43,41" concept="2" />
+      <node id="8031002466230282716" at="43,41,44,229" concept="2" />
+      <node id="6696474446775393141" at="46,234,47,41" concept="2" />
+      <node id="8031002466230282732" at="48,7,49,0" concept="7" />
+      <node id="8031002466230282733" at="49,0,50,254" concept="2" />
+      <node id="8031002466230282738" at="50,254,51,79" concept="2" />
+      <node id="8031002466231041559" at="52,12,53,289" concept="5" />
+      <node id="8031002466231041064" at="53,289,54,48" concept="2" />
+      <node id="8031002466231041055" at="54,48,55,0" concept="7" />
+      <node id="8031002466230282681" at="56,5,57,0" concept="7" />
+      <node id="8031002466230282699" at="57,0,58,0" concept="7" />
+      <node id="6696474446775392943" at="60,52,61,44" concept="6" />
+      <node id="8031002466230282601" at="18,230,21,5" concept="3" />
+      <node id="6696474446775388873" at="45,7,48,7" concept="3" />
+      <node id="6696474446775392943" at="60,0,63,0" concept="9" trace="isEmptyString#(Ljava/lang/String;)Z" />
+      <node id="8031002466231035868" at="52,10,56,5" concept="0" />
+      <node id="8031002466230282700" at="40,0,45,7" concept="13" />
+      <node id="8031002466230976748" at="32,74,39,7" concept="3" />
+      <node id="8031002466230993754" at="29,63,56,5" concept="3" />
+      <node id="677166607848012429" at="16,0,60,0" concept="9" trace="divideSingleLineCommentText#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <scope id="8031002466230282602" at="19,33,20,13" />
+      <scope id="6696474446775388875" at="46,234,47,41" />
+      <scope id="6696474446775392943" at="60,52,61,44" />
+      <scope id="8031002466230282701" at="41,246,44,229">
+        <var name="part" id="8031002466230282703" />
+      </scope>
+      <scope id="8031002466231035869" at="52,12,55,0">
+        <var name="empty" id="8031002466231041560" />
+      </scope>
+      <scope id="6696474446775392943" at="60,0,63,0">
+        <var name="str" id="6696474446775392943" />
+      </scope>
+      <scope id="8031002466230976750" at="33,58,38,183">
+        <var name="secondTextPart" id="8031002466230282620" />
+      </scope>
+      <scope id="8031002466230993756" at="30,290,51,79">
+        <var name="secondComment" id="8031002466230282608" />
+      </scope>
+      <scope id="677166607848012432" at="16,91,58,0">
+        <var name="caretPosition" id="8031002466230282643" />
+        <var name="editorCell" id="8031002466230282634" />
+        <var name="firstComment" id="8031002466230282595" />
+        <var name="indexInParent" id="8031002466230282683" />
+        <var name="leftPart" id="8031002466230282655" />
+        <var name="rightPart" id="8031002466230282663" />
+        <var name="text" id="8031002466230282649" />
+      </scope>
+      <scope id="677166607848012429" at="16,0,60,0">
+        <var name="editorContext" id="8031002466230291148" />
+        <var name="node" id="677166607848012446" />
+      </scope>
+      <unit id="5648770916613557848" at="15,0,64,0" name="ca.uwaterloo.gsd.ros.behavior.MessageSingleLineCommentUtil" />
+    </file>
+  </root>
+</debug-info>
+
