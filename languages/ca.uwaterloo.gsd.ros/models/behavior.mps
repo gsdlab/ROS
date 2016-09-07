@@ -850,7 +850,7 @@
     <node concept="3Tm1VV" id="4T$tNxujKTp" role="1B3o_S" />
   </node>
   <node concept="13h7C7" id="6Q7bJ$$mwOq">
-    <property role="3GE5qa" value="types" />
+    <property role="3GE5qa" value="expressions.types" />
     <ref role="13h7C2" to="smma:7FQByU3CrCQ" resolve="Type" />
     <node concept="13i0hz" id="4jc_TWT4LGD" role="13h7CS">
       <property role="TrG5h" value="getDefaultValue" />
@@ -1379,7 +1379,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="4ZVDCZCbsxD">
-    <property role="3GE5qa" value="expr" />
+    <property role="3GE5qa" value="expressions.expr" />
     <ref role="13h7C2" to="smma:7FQByU3CrCM" resolve="Expression" />
     <node concept="13hLZK" id="4ZVDCZCbsxE" role="13h7CW">
       <node concept="3clFbS" id="4ZVDCZCbsxF" role="2VODD2" />
@@ -1779,14 +1779,14 @@
     </node>
   </node>
   <node concept="13h7C7" id="52O1rAgC7Bq">
-    <property role="3GE5qa" value="literals" />
+    <property role="3GE5qa" value="expressions.literals" />
     <ref role="13h7C2" to="smma:7FQByU3CrDs" resolve="BooleanLiteral" />
     <node concept="13hLZK" id="52O1rAgC7Br" role="13h7CW">
       <node concept="3clFbS" id="52O1rAgC7Bs" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="37sMrNxDzJA">
-    <property role="3GE5qa" value="literals" />
+    <property role="3GE5qa" value="expressions.literals" />
     <ref role="13h7C2" to="smma:7FQByU3CrDz" resolve="FalseLiteral" />
     <node concept="13i0hz" id="37sMrNxDzJD" role="13h7CS">
       <property role="TrG5h" value="isStaticallyEvaluatable" />
@@ -1832,7 +1832,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="3ilck8KrCZ5">
-    <property role="3GE5qa" value="literals" />
+    <property role="3GE5qa" value="expressions.literals" />
     <ref role="13h7C2" to="smma:7FQByU3CrDq" resolve="Literal" />
     <node concept="13i0hz" id="$bJ0jhqE9Y" role="13h7CS">
       <property role="13i0iv" value="false" />
@@ -1867,7 +1867,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="52O1rAgC7BF">
-    <property role="3GE5qa" value="literals" />
+    <property role="3GE5qa" value="expressions.literals" />
     <ref role="13h7C2" to="smma:7FQByU3CrDB" resolve="NumberLiteral" />
     <node concept="13i0hz" id="3ilck8KrCZ8" role="13h7CS">
       <property role="TrG5h" value="isStaticallyEvaluatable" />
@@ -2188,7 +2188,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="37sMrNxDzJ4">
-    <property role="3GE5qa" value="literals" />
+    <property role="3GE5qa" value="expressions.literals" />
     <ref role="13h7C2" to="smma:7FQByU3CrDu" resolve="TrueLiteral" />
     <node concept="13i0hz" id="37sMrNxDzJ7" role="13h7CS">
       <property role="TrG5h" value="isStaticallyEvaluatable" />
@@ -2236,7 +2236,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="7M6JlBaxNNH">
-    <property role="3GE5qa" value="types.boolean" />
+    <property role="3GE5qa" value="expressions.types.boolean" />
     <ref role="13h7C2" to="smma:7FQByU3CrCU" resolve="BooleanType" />
     <node concept="13hLZK" id="7M6JlBaxNNI" role="13h7CW">
       <node concept="3clFbS" id="7M6JlBaxNNJ" role="2VODD2" />
@@ -2456,29 +2456,22 @@
       <node concept="3Tm1VV" id="3uQHHjfUZWU" role="1B3o_S" />
     </node>
   </node>
-  <node concept="13h7C7" id="4XMHJL4Gf_C">
-    <property role="3GE5qa" value="types.double" />
-    <ref role="13h7C2" to="smma:7G6iUFOh4op" resolve="DoubleType" />
-    <node concept="13hLZK" id="4XMHJL4Gf_D" role="13h7CW">
-      <node concept="3clFbS" id="4XMHJL4Gf_E" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="1z9MsBsVqFZ">
-    <property role="3GE5qa" value="types.int" />
+    <property role="3GE5qa" value="expressions.types.int" />
     <ref role="13h7C2" to="smma:7FQByU3CrDG" resolve="IntType" />
     <node concept="13hLZK" id="1z9MsBsVqG0" role="13h7CW">
       <node concept="3clFbS" id="1z9MsBsVqG1" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="4XMHJL4Gf_1">
-    <property role="3GE5qa" value="types.int" />
+    <property role="3GE5qa" value="expressions.types.int" />
     <ref role="13h7C2" to="smma:4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
     <node concept="13hLZK" id="4XMHJL4Gf_2" role="13h7CW">
       <node concept="3clFbS" id="4XMHJL4Gf_3" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="4XMHJL4Gf_c">
-    <property role="3GE5qa" value="types.string" />
+    <property role="3GE5qa" value="expressions.types.string" />
     <ref role="13h7C2" to="smma:1spqZOskJPs" resolve="StringType" />
     <node concept="13hLZK" id="4XMHJL4Gf_d" role="13h7CW">
       <node concept="3clFbS" id="4XMHJL4Gf_e" role="2VODD2" />

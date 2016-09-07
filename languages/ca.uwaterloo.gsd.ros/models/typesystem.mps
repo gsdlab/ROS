@@ -181,7 +181,7 @@
   </registry>
   <node concept="1YbPZF" id="2WRRjDdqVEq">
     <property role="TrG5h" value="typeof_Type" />
-    <property role="3GE5qa" value="types" />
+    <property role="3GE5qa" value="expressions.types" />
     <node concept="3clFbS" id="2WRRjDdqVEr" role="18ibNy">
       <node concept="1Z5TYs" id="3ccihsocl0X" role="3cqZAp">
         <node concept="mw_s8" id="2zhwXA$XgOH" role="1ZfhKB">
@@ -208,7 +208,7 @@
   </node>
   <node concept="1YbPZF" id="7FQByU3CrDI">
     <property role="TrG5h" value="typeof_BooleanLiteral" />
-    <property role="3GE5qa" value="literals" />
+    <property role="3GE5qa" value="expressions.literals" />
     <node concept="3clFbS" id="7FQByU3CrDJ" role="18ibNy">
       <node concept="1Z5TYs" id="7FQByU3CrDP" role="3cqZAp">
         <node concept="mw_s8" id="7FQByU3CrDT" role="1ZfhKB">
@@ -236,7 +236,7 @@
   </node>
   <node concept="1YbPZF" id="7FQByU3CrDY">
     <property role="TrG5h" value="typeof_NumberLiteral" />
-    <property role="3GE5qa" value="literals" />
+    <property role="3GE5qa" value="expressions.literals" />
     <node concept="3clFbS" id="7FQByU3CrDZ" role="18ibNy">
       <node concept="3clFbJ" id="4qSf1u1Tre2" role="3cqZAp">
         <node concept="1Wc70l" id="1f0gqNz_MAb" role="3clFbw">
@@ -299,7 +299,7 @@
   </node>
   <node concept="1YbPZF" id="2uk4icoP3R2">
     <property role="TrG5h" value="typeof_StringLiteral" />
-    <property role="3GE5qa" value="literals" />
+    <property role="3GE5qa" value="expressions.literals" />
     <node concept="3clFbS" id="2uk4icoP3R3" role="18ibNy">
       <node concept="1Z5TYs" id="2uk4icoP3SY" role="3cqZAp">
         <node concept="mw_s8" id="2uk4icoP3Tl" role="1ZfhKB">
@@ -326,7 +326,7 @@
     </node>
   </node>
   <node concept="3aFulz" id="61lw97FpWDV">
-    <property role="3GE5qa" value="types" />
+    <property role="3GE5qa" value="expressions.types" />
     <property role="TrG5h" value="comparePrimitiveWithPrimitiveType" />
     <node concept="1YaCAy" id="61lw97FpWDZ" role="3bfgSz">
       <property role="TrG5h" value="primitiveType" />
@@ -346,6 +346,7 @@
   </node>
   <node concept="312cEu" id="7x9Z_y1Srid">
     <property role="TrG5h" value="NumLiteralTypeHelper" />
+    <property role="3GE5qa" value="expressions" />
     <node concept="3Tm1VV" id="7x9Z_y1Srie" role="1B3o_S" />
     <node concept="2YIFZL" id="7x9Z_y1Srif" role="jymVt">
       <property role="TrG5h" value="type" />
@@ -540,7 +541,7 @@
     </node>
   </node>
   <node concept="2sgARr" id="6xLvLBZzlc7">
-    <property role="3GE5qa" value="types.int" />
+    <property role="3GE5qa" value="expressions.types.int" />
     <property role="TrG5h" value="supertypeOfPrimitiveBasicIntegralType" />
     <node concept="3clFbS" id="6xLvLBZzlc8" role="2sgrp5">
       <node concept="3clFbF" id="6xLvLBZzn0c" role="3cqZAp">
@@ -560,7 +561,7 @@
   </node>
   <node concept="1YbPZF" id="3ccihsockZk">
     <property role="TrG5h" value="typeof_PrimitiveBasicIntegralType" />
-    <property role="3GE5qa" value="types.int" />
+    <property role="3GE5qa" value="expressions.types.int" />
     <property role="18ip37" value="true" />
     <node concept="3clFbS" id="3ccihsockZl" role="18ibNy">
       <node concept="1Z5TYs" id="3W2JPfpYJuD" role="3cqZAp">

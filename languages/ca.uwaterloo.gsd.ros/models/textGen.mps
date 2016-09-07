@@ -186,7 +186,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="72EP5kL_5N$">
-    <property role="3GE5qa" value="literals" />
+    <property role="3GE5qa" value="expressions.literals" />
     <ref role="WuzLi" to="smma:7FQByU3CrDz" resolve="FalseLiteral" />
     <node concept="11bSqf" id="72EP5kL_5N_" role="11c4hB">
       <node concept="3clFbS" id="72EP5kL_5NA" role="2VODD2">
@@ -199,7 +199,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="72EP5kL_5Nn">
-    <property role="3GE5qa" value="literals" />
+    <property role="3GE5qa" value="expressions.literals" />
     <ref role="WuzLi" to="smma:7FQByU3CrDB" resolve="NumberLiteral" />
     <node concept="11bSqf" id="72EP5kL_5No" role="11c4hB">
       <node concept="3clFbS" id="72EP5kL_5Np" role="2VODD2">
@@ -217,7 +217,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="2uk4icoP4RG">
-    <property role="3GE5qa" value="literals" />
+    <property role="3GE5qa" value="expressions.literals" />
     <ref role="WuzLi" to="smma:2uk4icoP2p1" resolve="StringLiteral" />
     <node concept="11bSqf" id="2uk4icoP4RH" role="11c4hB">
       <node concept="3clFbS" id="2uk4icoP4RI" role="2VODD2">
@@ -241,7 +241,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="72EP5kL_5MY">
-    <property role="3GE5qa" value="literals" />
+    <property role="3GE5qa" value="expressions.literals" />
     <ref role="WuzLi" to="smma:7FQByU3CrDu" resolve="TrueLiteral" />
     <node concept="11bSqf" id="72EP5kL_5MZ" role="11c4hB">
       <node concept="3clFbS" id="72EP5kL_5N0" role="2VODD2">
@@ -254,7 +254,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="72EP5kL_5M_">
-    <property role="3GE5qa" value="types" />
+    <property role="3GE5qa" value="expressions.types" />
     <ref role="WuzLi" to="smma:7FQByU3CrCS" resolve="PrimitiveType" />
     <node concept="11bSqf" id="72EP5kL_5MA" role="11c4hB">
       <node concept="3clFbS" id="72EP5kL_5MB" role="2VODD2">
@@ -275,7 +275,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="5K77MGvGz1p">
-    <property role="3GE5qa" value="types.boolean" />
+    <property role="3GE5qa" value="expressions.types.boolean" />
     <ref role="WuzLi" to="smma:7FQByU3CrCU" resolve="BooleanType" />
     <node concept="11bSqf" id="5K77MGvGz1q" role="11c4hB">
       <node concept="3clFbS" id="5K77MGvGz1r" role="2VODD2">

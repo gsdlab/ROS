@@ -116,6 +116,17 @@
     <property role="TrG5h" value="Field" />
     <property role="R4oN_" value="ROS Field" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5X4OeI9m_cJ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7FQByU3CrCQ" resolve="Type" />
+    </node>
+    <node concept="1TJgyj" id="5X4OeI9nI_3" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <ref role="20lvS9" node="7FQByU3CrCM" resolve="Expression" />
+    </node>
     <node concept="PrWs8" id="ZfruYZy2PY" role="PzmwI">
       <ref role="PrY4T" node="bl22kSmCpX" resolve="IElement" />
     </node>
@@ -128,12 +139,12 @@
   </node>
   <node concept="PlHQZ" id="7FQByU3C_31">
     <property role="TrG5h" value="IComparable" />
-    <property role="3GE5qa" value="types" />
+    <property role="3GE5qa" value="expressions.types" />
     <property role="1pbfSe" value="23531793" />
   </node>
   <node concept="PlHQZ" id="4ZVDCZCaQ86">
     <property role="TrG5h" value="INumber" />
-    <property role="3GE5qa" value="types" />
+    <property role="3GE5qa" value="expressions.types" />
     <property role="1pbfSe" value="942082197" />
     <node concept="PrWs8" id="1xPdI77HMSJ" role="PrDN$">
       <ref role="PrY4T" node="4ZVDCZCa$xx" resolve="IOrdered" />
@@ -143,13 +154,13 @@
     </node>
   </node>
   <node concept="PlHQZ" id="3up5rlxN5AE">
-    <property role="3GE5qa" value="types" />
+    <property role="3GE5qa" value="expressions.types" />
     <property role="TrG5h" value="INumeric" />
     <property role="1pbfSe" value="1721405601" />
   </node>
   <node concept="PlHQZ" id="4ZVDCZCa$xx">
     <property role="TrG5h" value="IOrdered" />
-    <property role="3GE5qa" value="types" />
+    <property role="3GE5qa" value="expressions.types" />
     <property role="1pbfSe" value="942010096" />
     <node concept="PrWs8" id="1xPdI77HX_z" role="PrDN$">
       <ref role="PrY4T" node="7FQByU3C_31" resolve="IComparable" />
@@ -157,7 +168,7 @@
   </node>
   <node concept="1TIwiD" id="7FQByU3CrCQ">
     <property role="TrG5h" value="Type" />
-    <property role="3GE5qa" value="types" />
+    <property role="3GE5qa" value="expressions.types" />
     <property role="R4oN_" value="--" />
     <property role="R5$K7" value="true" />
     <property role="1pbfSe" value="23570332" />
@@ -171,7 +182,7 @@
   </node>
   <node concept="1TIwiD" id="7FQByU3CrCM">
     <property role="TrG5h" value="Expression" />
-    <property role="3GE5qa" value="expr" />
+    <property role="3GE5qa" value="expressions.expr" />
     <property role="R5$K7" value="true" />
     <property role="R4oN_" value="--" />
     <property role="1pbfSe" value="23570336" />
@@ -183,7 +194,7 @@
   </node>
   <node concept="1TIwiD" id="7FQByU3CrDs">
     <property role="TrG5h" value="BooleanLiteral" />
-    <property role="3GE5qa" value="literals" />
+    <property role="3GE5qa" value="expressions.literals" />
     <property role="R5$K7" value="true" />
     <property role="R4oN_" value="--" />
     <property role="1pbfSe" value="23570294" />
@@ -191,20 +202,20 @@
   </node>
   <node concept="1TIwiD" id="7FQByU3CrDz">
     <property role="TrG5h" value="FalseLiteral" />
-    <property role="3GE5qa" value="literals" />
+    <property role="3GE5qa" value="expressions.literals" />
     <property role="R4oN_" value="not true :-)" />
     <property role="34LRSv" value="false" />
     <property role="1pbfSe" value="23570287" />
     <ref role="1TJDcQ" node="7FQByU3CrDs" resolve="BooleanLiteral" />
   </node>
   <node concept="PlHQZ" id="4_C0Vjqqj_u">
-    <property role="3GE5qa" value="literals" />
+    <property role="3GE5qa" value="expressions.literals" />
     <property role="TrG5h" value="INumericLiteral" />
     <property role="1pbfSe" value="600915218" />
   </node>
   <node concept="1TIwiD" id="7FQByU3CrDq">
     <property role="TrG5h" value="Literal" />
-    <property role="3GE5qa" value="literals" />
+    <property role="3GE5qa" value="expressions.literals" />
     <property role="R5$K7" value="true" />
     <property role="R4oN_" value="--" />
     <property role="1pbfSe" value="23570296" />
@@ -212,7 +223,7 @@
   </node>
   <node concept="1TIwiD" id="7FQByU3CrDB">
     <property role="TrG5h" value="NumberLiteral" />
-    <property role="3GE5qa" value="literals" />
+    <property role="3GE5qa" value="expressions.literals" />
     <property role="R4oN_" value="a number (with optional decimal dot and minus)" />
     <property role="1pbfSe" value="23570283" />
     <ref role="1TJDcQ" node="1UQ4qqfUXf_" resolve="NumericLiteral" />
@@ -224,7 +235,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="1UQ4qqfUXf_">
-    <property role="3GE5qa" value="literals" />
+    <property role="3GE5qa" value="expressions.literals" />
     <property role="TrG5h" value="NumericLiteral" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
@@ -236,10 +247,11 @@
     </node>
   </node>
   <node concept="1TIwiD" id="2uk4icoP2p1">
-    <property role="3GE5qa" value="literals" />
+    <property role="3GE5qa" value="expressions.literals" />
     <property role="TrG5h" value="StringLiteral" />
     <property role="34LRSv" value="&quot;" />
     <property role="1pbfSe" value="1080571748" />
+    <property role="R4oN_" value="string" />
     <ref role="1TJDcQ" node="7FQByU3CrDq" resolve="Literal" />
     <node concept="1TJgyi" id="2uk4icoP3Qc" role="1TKVEl">
       <property role="TrG5h" value="text" />
@@ -248,7 +260,7 @@
   </node>
   <node concept="1TIwiD" id="7FQByU3CrDu">
     <property role="TrG5h" value="TrueLiteral" />
-    <property role="3GE5qa" value="literals" />
+    <property role="3GE5qa" value="expressions.literals" />
     <property role="34LRSv" value="true" />
     <property role="R4oN_" value="not false :-)" />
     <property role="1pbfSe" value="23570292" />
@@ -256,7 +268,7 @@
   </node>
   <node concept="1TIwiD" id="7FQByU3CrCS">
     <property role="TrG5h" value="PrimitiveType" />
-    <property role="3GE5qa" value="types" />
+    <property role="3GE5qa" value="expressions.types" />
     <property role="R4oN_" value="--" />
     <property role="34LRSv" value="##primitive type##" />
     <property role="R5$K7" value="true" />
@@ -265,9 +277,9 @@
   </node>
   <node concept="1TIwiD" id="7FQByU3CrCU">
     <property role="TrG5h" value="BooleanType" />
-    <property role="3GE5qa" value="types.boolean" />
-    <property role="R4oN_" value="true and false" />
-    <property role="34LRSv" value="boolean" />
+    <property role="3GE5qa" value="expressions.types.boolean" />
+    <property role="R4oN_" value="unsigned 8-bit int" />
+    <property role="34LRSv" value="bool" />
     <property role="1pbfSe" value="23570328" />
     <ref role="1TJDcQ" node="7FQByU3CrCS" resolve="PrimitiveType" />
     <node concept="PrWs8" id="3uQHHjfUZrz" role="PzmwI">
@@ -275,15 +287,15 @@
     </node>
   </node>
   <node concept="1TIwiD" id="7G6iUFOh4op">
-    <property role="TrG5h" value="DoubleType" />
-    <property role="3GE5qa" value="types.double" />
-    <property role="34LRSv" value="double" />
-    <property role="R4oN_" value="double type" />
+    <property role="TrG5h" value="Float64Type" />
+    <property role="3GE5qa" value="expressions.types.float" />
+    <property role="34LRSv" value="float64" />
+    <property role="R4oN_" value="64-bit IEEE float" />
     <property role="1pbfSe" value="1867157955" />
     <ref role="1TJDcQ" node="7VU$pJBYM1N" resolve="PrimitiveIEEE754Type" />
   </node>
   <node concept="1TIwiD" id="7VU$pJBYM1N">
-    <property role="3GE5qa" value="types.double" />
+    <property role="3GE5qa" value="expressions.types.float" />
     <property role="TrG5h" value="PrimitiveIEEE754Type" />
     <property role="R4oN_" value="--" />
     <property role="R5$K7" value="true" />
@@ -297,15 +309,15 @@
     </node>
   </node>
   <node concept="1TIwiD" id="7FQByU3CrDG">
-    <property role="TrG5h" value="IntType" />
-    <property role="3GE5qa" value="types.int" />
-    <property role="R4oN_" value="integer type" />
-    <property role="34LRSv" value="integer" />
+    <property role="TrG5h" value="Int8Type" />
+    <property role="3GE5qa" value="expressions.types.int" />
+    <property role="R4oN_" value="signed 8-bit int" />
+    <property role="34LRSv" value="int8" />
     <property role="1pbfSe" value="23570278" />
     <ref role="1TJDcQ" node="4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
   </node>
   <node concept="1TIwiD" id="4Pack3zS1Zq">
-    <property role="3GE5qa" value="types.int" />
+    <property role="3GE5qa" value="expressions.types.int" />
     <property role="TrG5h" value="PrimitiveBasicIntegralType" />
     <property role="R4oN_" value="--" />
     <property role="R5$K7" value="true" />
@@ -320,10 +332,90 @@
   </node>
   <node concept="1TIwiD" id="1spqZOskJPs">
     <property role="TrG5h" value="StringType" />
-    <property role="3GE5qa" value="types.string" />
+    <property role="3GE5qa" value="expressions.types.string" />
     <property role="34LRSv" value="string" />
-    <property role="R4oN_" value="string type" />
+    <property role="R4oN_" value="ascii string" />
     <property role="1pbfSe" value="862742873" />
+    <ref role="1TJDcQ" node="4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
+  </node>
+  <node concept="1TIwiD" id="5X4OeI9nB1L">
+    <property role="TrG5h" value="Float32Type" />
+    <property role="3GE5qa" value="expressions.types.float" />
+    <property role="34LRSv" value="float32" />
+    <property role="1pbfSe" value="391954084" />
+    <property role="R4oN_" value="32-bit IEEE float" />
+    <ref role="1TJDcQ" node="7VU$pJBYM1N" resolve="PrimitiveIEEE754Type" />
+  </node>
+  <node concept="1TIwiD" id="5X4OeI9nB1M">
+    <property role="TrG5h" value="UInt8Type" />
+    <property role="3GE5qa" value="expressions.types.int" />
+    <property role="R4oN_" value="unsigned 8-bit int" />
+    <property role="34LRSv" value="uint8" />
+    <property role="1pbfSe" value="391954083" />
+    <ref role="1TJDcQ" node="4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
+  </node>
+  <node concept="1TIwiD" id="5X4OeI9nB1N">
+    <property role="TrG5h" value="Int16Type" />
+    <property role="3GE5qa" value="expressions.types.int" />
+    <property role="R4oN_" value="signed 16-bit int" />
+    <property role="34LRSv" value="int16" />
+    <property role="1pbfSe" value="391954082" />
+    <ref role="1TJDcQ" node="4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
+  </node>
+  <node concept="1TIwiD" id="5X4OeI9nB1O">
+    <property role="TrG5h" value="UInt16Type" />
+    <property role="3GE5qa" value="expressions.types.int" />
+    <property role="R4oN_" value="unsigned 16-bit int" />
+    <property role="34LRSv" value="uint16" />
+    <property role="1pbfSe" value="391954081" />
+    <ref role="1TJDcQ" node="4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
+  </node>
+  <node concept="1TIwiD" id="5X4OeI9nB1P">
+    <property role="TrG5h" value="Int64Type" />
+    <property role="3GE5qa" value="expressions.types.int" />
+    <property role="R4oN_" value="signed 64-bit int" />
+    <property role="34LRSv" value="int64" />
+    <property role="1pbfSe" value="391954080" />
+    <ref role="1TJDcQ" node="4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
+  </node>
+  <node concept="1TIwiD" id="5X4OeI9nB1Q">
+    <property role="TrG5h" value="UInt64Type" />
+    <property role="3GE5qa" value="expressions.types.int" />
+    <property role="R4oN_" value="unsigned 64-bit int" />
+    <property role="34LRSv" value="uint64" />
+    <property role="1pbfSe" value="391954079" />
+    <ref role="1TJDcQ" node="4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
+  </node>
+  <node concept="1TIwiD" id="5X4OeI9nB1X">
+    <property role="TrG5h" value="Int32Type" />
+    <property role="3GE5qa" value="expressions.types.int" />
+    <property role="R4oN_" value="signed 32-bit int" />
+    <property role="34LRSv" value="int32" />
+    <property role="1pbfSe" value="391954072" />
+    <ref role="1TJDcQ" node="4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
+  </node>
+  <node concept="1TIwiD" id="5X4OeI9nB1Y">
+    <property role="TrG5h" value="UInt32Type" />
+    <property role="3GE5qa" value="expressions.types.int" />
+    <property role="R4oN_" value="unsigned 32-bit int" />
+    <property role="34LRSv" value="uint32" />
+    <property role="1pbfSe" value="391954071" />
+    <ref role="1TJDcQ" node="4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
+  </node>
+  <node concept="1TIwiD" id="5X4OeI9nB1Z">
+    <property role="TrG5h" value="TimeType" />
+    <property role="3GE5qa" value="expressions.types.int" />
+    <property role="R4oN_" value="secs/nsecs unsigned 32-bit ints" />
+    <property role="34LRSv" value="time" />
+    <property role="1pbfSe" value="391954070" />
+    <ref role="1TJDcQ" node="4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
+  </node>
+  <node concept="1TIwiD" id="5X4OeI9nB20">
+    <property role="TrG5h" value="DurationType" />
+    <property role="3GE5qa" value="expressions.types.int" />
+    <property role="34LRSv" value="duration" />
+    <property role="1pbfSe" value="391954069" />
+    <property role="R4oN_" value="secs/nsecs signed 32-bit ints" />
     <ref role="1TJDcQ" node="4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
   </node>
 </model>
