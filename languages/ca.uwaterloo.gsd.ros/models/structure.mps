@@ -9,15 +9,19 @@
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="2gv2" ref="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
         <child id="1169127546356" name="extends" index="PrDN$" />
@@ -31,6 +35,9 @@
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
+      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <reference id="1082985295845" name="dataType" index="AX2Wp" />
+      </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
@@ -39,6 +46,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -49,6 +59,7 @@
     <property role="19KtqR" value="true" />
     <property role="MwhBj" value="${module}/icons/clafer.png" />
     <property role="1pbfSe" value="992958552" />
+    <property role="R4oN_" value="ROS Message" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="ZfruYZwr3F" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -99,6 +110,221 @@
     <node concept="PrWs8" id="ZfruYZxEgE" role="PzmwI">
       <ref role="PrY4T" node="bl22kSmCpX" resolve="IElement" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="ZfruYZy1ku">
+    <property role="1pbfSe" value="816348403" />
+    <property role="TrG5h" value="Field" />
+    <property role="R4oN_" value="ROS Field" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="ZfruYZy2PY" role="PzmwI">
+      <ref role="PrY4T" node="bl22kSmCpX" resolve="IElement" />
+    </node>
+    <node concept="PrWs8" id="ZfruYZy2Q6" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+    <node concept="PrWs8" id="ZfruYZy2Qj" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7FQByU3C_31">
+    <property role="TrG5h" value="IComparable" />
+    <property role="3GE5qa" value="types" />
+    <property role="1pbfSe" value="23531793" />
+  </node>
+  <node concept="PlHQZ" id="4ZVDCZCaQ86">
+    <property role="TrG5h" value="INumber" />
+    <property role="3GE5qa" value="types" />
+    <property role="1pbfSe" value="942082197" />
+    <node concept="PrWs8" id="1xPdI77HMSJ" role="PrDN$">
+      <ref role="PrY4T" node="4ZVDCZCa$xx" resolve="IOrdered" />
+    </node>
+    <node concept="PrWs8" id="3up5rlxN5AG" role="PrDN$">
+      <ref role="PrY4T" node="3up5rlxN5AE" resolve="INumeric" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3up5rlxN5AE">
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="INumeric" />
+    <property role="1pbfSe" value="1721405601" />
+  </node>
+  <node concept="PlHQZ" id="4ZVDCZCa$xx">
+    <property role="TrG5h" value="IOrdered" />
+    <property role="3GE5qa" value="types" />
+    <property role="1pbfSe" value="942010096" />
+    <node concept="PrWs8" id="1xPdI77HX_z" role="PrDN$">
+      <ref role="PrY4T" node="7FQByU3C_31" resolve="IComparable" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7FQByU3CrCQ">
+    <property role="TrG5h" value="Type" />
+    <property role="3GE5qa" value="types" />
+    <property role="R4oN_" value="--" />
+    <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="23570332" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7mVHCj32uLT" role="PzmwI">
+      <ref role="PrY4T" to="2gv2:2by6456Kf3p" resolve="IMappableType" />
+    </node>
+    <node concept="PrWs8" id="7YIk2VQGXrJ" role="PzmwI">
+      <ref role="PrY4T" to="tpck:hYa1RjM" resolve="IType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7FQByU3CrCM">
+    <property role="TrG5h" value="Expression" />
+    <property role="3GE5qa" value="expr" />
+    <property role="R5$K7" value="true" />
+    <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="23570336" />
+    <property role="34LRSv" value="clafer expression" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="$bJ0jgXxo3" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:$bJ0jgPete" resolve="IValueDebuggable" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7FQByU3CrDs">
+    <property role="TrG5h" value="BooleanLiteral" />
+    <property role="3GE5qa" value="literals" />
+    <property role="R5$K7" value="true" />
+    <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="23570294" />
+    <ref role="1TJDcQ" node="7FQByU3CrDq" resolve="Literal" />
+  </node>
+  <node concept="1TIwiD" id="7FQByU3CrDz">
+    <property role="TrG5h" value="FalseLiteral" />
+    <property role="3GE5qa" value="literals" />
+    <property role="R4oN_" value="not true :-)" />
+    <property role="34LRSv" value="false" />
+    <property role="1pbfSe" value="23570287" />
+    <ref role="1TJDcQ" node="7FQByU3CrDs" resolve="BooleanLiteral" />
+  </node>
+  <node concept="PlHQZ" id="4_C0Vjqqj_u">
+    <property role="3GE5qa" value="literals" />
+    <property role="TrG5h" value="INumericLiteral" />
+    <property role="1pbfSe" value="600915218" />
+  </node>
+  <node concept="1TIwiD" id="7FQByU3CrDq">
+    <property role="TrG5h" value="Literal" />
+    <property role="3GE5qa" value="literals" />
+    <property role="R5$K7" value="true" />
+    <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="23570296" />
+    <ref role="1TJDcQ" node="7FQByU3CrCM" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="7FQByU3CrDB">
+    <property role="TrG5h" value="NumberLiteral" />
+    <property role="3GE5qa" value="literals" />
+    <property role="R4oN_" value="a number (with optional decimal dot and minus)" />
+    <property role="1pbfSe" value="23570283" />
+    <ref role="1TJDcQ" node="1UQ4qqfUXf_" resolve="NumericLiteral" />
+    <node concept="PrWs8" id="4_C0Vjqqj_v" role="PzmwI">
+      <ref role="PrY4T" node="4_C0Vjqqj_u" resolve="INumericLiteral" />
+    </node>
+    <node concept="PrWs8" id="5HxjapwgqUD" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1UQ4qqfUXf_">
+    <property role="3GE5qa" value="literals" />
+    <property role="TrG5h" value="NumericLiteral" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="1365121653" />
+    <ref role="1TJDcQ" node="7FQByU3CrDq" resolve="Literal" />
+    <node concept="1TJgyi" id="1UQ4qqfV3yK" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2uk4icoP2p1">
+    <property role="3GE5qa" value="literals" />
+    <property role="TrG5h" value="StringLiteral" />
+    <property role="34LRSv" value="&quot;" />
+    <property role="1pbfSe" value="1080571748" />
+    <ref role="1TJDcQ" node="7FQByU3CrDq" resolve="Literal" />
+    <node concept="1TJgyi" id="2uk4icoP3Qc" role="1TKVEl">
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7FQByU3CrDu">
+    <property role="TrG5h" value="TrueLiteral" />
+    <property role="3GE5qa" value="literals" />
+    <property role="34LRSv" value="true" />
+    <property role="R4oN_" value="not false :-)" />
+    <property role="1pbfSe" value="23570292" />
+    <ref role="1TJDcQ" node="7FQByU3CrDs" resolve="BooleanLiteral" />
+  </node>
+  <node concept="1TIwiD" id="7FQByU3CrCS">
+    <property role="TrG5h" value="PrimitiveType" />
+    <property role="3GE5qa" value="types" />
+    <property role="R4oN_" value="--" />
+    <property role="34LRSv" value="##primitive type##" />
+    <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="23570330" />
+    <ref role="1TJDcQ" node="7FQByU3CrCQ" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="7FQByU3CrCU">
+    <property role="TrG5h" value="BooleanType" />
+    <property role="3GE5qa" value="types.boolean" />
+    <property role="R4oN_" value="true and false" />
+    <property role="34LRSv" value="boolean" />
+    <property role="1pbfSe" value="23570328" />
+    <ref role="1TJDcQ" node="7FQByU3CrCS" resolve="PrimitiveType" />
+    <node concept="PrWs8" id="3uQHHjfUZrz" role="PzmwI">
+      <ref role="PrY4T" node="7FQByU3C_31" resolve="IComparable" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7G6iUFOh4op">
+    <property role="TrG5h" value="DoubleType" />
+    <property role="3GE5qa" value="types.double" />
+    <property role="34LRSv" value="double" />
+    <property role="R4oN_" value="double type" />
+    <property role="1pbfSe" value="1867157955" />
+    <ref role="1TJDcQ" node="7VU$pJBYM1N" resolve="PrimitiveIEEE754Type" />
+  </node>
+  <node concept="1TIwiD" id="7VU$pJBYM1N">
+    <property role="3GE5qa" value="types.double" />
+    <property role="TrG5h" value="PrimitiveIEEE754Type" />
+    <property role="R4oN_" value="--" />
+    <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="1727377934" />
+    <ref role="1TJDcQ" node="7FQByU3CrCS" resolve="PrimitiveType" />
+    <node concept="PrWs8" id="3uQHHjfUZrC" role="PzmwI">
+      <ref role="PrY4T" node="4ZVDCZCa$xx" resolve="IOrdered" />
+    </node>
+    <node concept="PrWs8" id="3uQHHjfUZrI" role="PzmwI">
+      <ref role="PrY4T" node="3up5rlxN5AE" resolve="INumeric" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7FQByU3CrDG">
+    <property role="TrG5h" value="IntType" />
+    <property role="3GE5qa" value="types.int" />
+    <property role="R4oN_" value="integer type" />
+    <property role="34LRSv" value="integer" />
+    <property role="1pbfSe" value="23570278" />
+    <ref role="1TJDcQ" node="4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
+  </node>
+  <node concept="1TIwiD" id="4Pack3zS1Zq">
+    <property role="3GE5qa" value="types.int" />
+    <property role="TrG5h" value="PrimitiveBasicIntegralType" />
+    <property role="R4oN_" value="--" />
+    <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="824856858" />
+    <ref role="1TJDcQ" node="7FQByU3CrCS" resolve="PrimitiveType" />
+    <node concept="PrWs8" id="3uQHHjfV4Fd" role="PzmwI">
+      <ref role="PrY4T" node="3up5rlxN5AE" resolve="INumeric" />
+    </node>
+    <node concept="PrWs8" id="3uQHHjfV4F7" role="PzmwI">
+      <ref role="PrY4T" node="4ZVDCZCa$xx" resolve="IOrdered" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1spqZOskJPs">
+    <property role="TrG5h" value="StringType" />
+    <property role="3GE5qa" value="types.string" />
+    <property role="34LRSv" value="string" />
+    <property role="R4oN_" value="string type" />
+    <property role="1pbfSe" value="862742873" />
+    <ref role="1TJDcQ" node="4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
   </node>
 </model>
 
