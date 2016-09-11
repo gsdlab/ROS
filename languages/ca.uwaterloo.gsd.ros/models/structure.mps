@@ -127,6 +127,9 @@
       <property role="20kJfa" value="value" />
       <ref role="20lvS9" node="7FQByU3CrCM" resolve="Expression" />
     </node>
+    <node concept="PrWs8" id="7cVn2sA5zeG" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
   </node>
   <node concept="PlHQZ" id="7FQByU3C_31">
     <property role="TrG5h" value="IComparable" />
@@ -450,9 +453,6 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="ZfruYZy2PY" role="PzmwI">
       <ref role="PrY4T" node="bl22kSmCpX" resolve="IElement" />
-    </node>
-    <node concept="PrWs8" id="ZfruYZy2Q6" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
     <node concept="PrWs8" id="ZfruYZy2Qj" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />

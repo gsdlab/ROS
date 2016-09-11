@@ -22,6 +22,7 @@
       <concept id="1621446021388580552" name="ca.uwaterloo.gsd.ros.structure.ArrayType" flags="ng" index="3pPFTo">
         <child id="1621446021388580565" name="componentType" index="3pPFT5" />
       </concept>
+      <concept id="1621446021388794188" name="ca.uwaterloo.gsd.ros.structure.HeaderField" flags="ng" index="3pQv7s" />
       <concept id="8860443239512128058" name="ca.uwaterloo.gsd.ros.structure.BooleanType" flags="ng" index="3TlMgk" />
       <concept id="8860443239512128094" name="ca.uwaterloo.gsd.ros.structure.TrueLiteral" flags="ng" index="3TlMhK" />
     </language>
@@ -37,7 +38,9 @@
   <node concept="UzPwm" id="ZfruYZxuyj">
     <property role="TrG5h" value="Message" />
     <property role="3GE5qa" value="test.test2" />
-    <node concept="UzEYP" id="1q0y93fmMxT" role="2KjHO4" />
+    <node concept="3pQv7s" id="7cVn2sA5IW7" role="2KjHO4">
+      <property role="TrG5h" value="header" />
+    </node>
   </node>
   <node concept="UzPwm" id="5X4OeI9orGX">
     <property role="TrG5h" value="Message2" />
@@ -55,6 +58,7 @@
         </node>
       </node>
     </node>
+    <node concept="UzEYP" id="7cVn2sA5xZm" role="2KjHO4" />
     <node concept="UzEYP" id="1q0y93fmvSQ" role="2KjHO4" />
   </node>
 </model>
