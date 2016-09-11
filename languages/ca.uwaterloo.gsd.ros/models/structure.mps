@@ -14,6 +14,7 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="6054523464626862044" name="jetbrains.mps.lang.structure.structure.AttributeInfo_IsMultiple" flags="ng" index="tn0Fv">
         <property id="6054523464626875854" name="value" index="tnX3d" />
       </concept>
@@ -498,6 +499,24 @@
         <ref role="trN6q" node="1q0y93fmnhN" resolve="BaseField" />
       </node>
     </node>
+  </node>
+  <node concept="1TIwiD" id="7cVn2sA8Y$B">
+    <property role="TrG5h" value="Byte" />
+    <property role="3GE5qa" value="expressions.types.int" />
+    <property role="R4oN_" value="deprecated alias for int8" />
+    <property role="34LRSv" value="byte" />
+    <property role="1pbfSe" value="1721809586" />
+    <ref role="1TJDcQ" node="7FQByU3CrDG" resolve="Int8Type" />
+    <node concept="asaX9" id="7cVn2sA8Y$I" role="lGtFl" />
+  </node>
+  <node concept="1TIwiD" id="7cVn2sA8Zjk">
+    <property role="TrG5h" value="Char" />
+    <property role="3GE5qa" value="expressions.types.int" />
+    <property role="R4oN_" value="deprecated alias for uint8" />
+    <property role="34LRSv" value="char" />
+    <property role="1pbfSe" value="1721806597" />
+    <ref role="1TJDcQ" node="4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
+    <node concept="asaX9" id="7cVn2sA8Zju" role="lGtFl" />
   </node>
 </model>
 
