@@ -115,7 +115,7 @@
     <property role="1pbfSe" value="816348403" />
     <property role="TrG5h" value="Field" />
     <property role="R4oN_" value="ROS Field" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="1q0y93fmnhN" resolve="BaseField" />
     <node concept="1TJgyj" id="5X4OeI9m_cJ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="type" />
@@ -126,15 +126,6 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="value" />
       <ref role="20lvS9" node="7FQByU3CrCM" resolve="Expression" />
-    </node>
-    <node concept="PrWs8" id="ZfruYZy2PY" role="PzmwI">
-      <ref role="PrY4T" node="bl22kSmCpX" resolve="IElement" />
-    </node>
-    <node concept="PrWs8" id="ZfruYZy2Q6" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-    <node concept="PrWs8" id="ZfruYZy2Qj" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
     </node>
   </node>
   <node concept="PlHQZ" id="7FQByU3C_31">
@@ -417,6 +408,62 @@
     <property role="1pbfSe" value="391954069" />
     <property role="R4oN_" value="secs/nsecs signed 32-bit ints" />
     <ref role="1TJDcQ" node="4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
+  </node>
+  <node concept="1TIwiD" id="5X4OeI9oaAJ">
+    <property role="1pbfSe" value="391808358" />
+    <property role="3GE5qa" value="expressions.types" />
+    <property role="TrG5h" value="MessageType" />
+    <property role="R4oN_" value="message" />
+    <ref role="1TJDcQ" node="7FQByU3CrCQ" resolve="Type" />
+    <node concept="1TJgyj" id="5X4OeI9oaAK" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="message" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="bl22kSm_0N" resolve="Message" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1q0y93flzr8">
+    <property role="1pbfSe" value="438911144" />
+    <property role="3GE5qa" value="expressions.types" />
+    <property role="TrG5h" value="ArrayType" />
+    <ref role="1TJDcQ" node="7FQByU3CrCQ" resolve="Type" />
+    <node concept="1TJgyj" id="1q0y93flzrl" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="componentType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7FQByU3CrCQ" resolve="Type" />
+    </node>
+    <node concept="1TJgyj" id="7cVn2sA3Yaa" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="length" />
+      <ref role="20lvS9" node="7FQByU3CrDB" resolve="NumberLiteral" />
+    </node>
+    <node concept="PrWs8" id="1q0y93flzri" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1q0y93fmnhN">
+    <property role="1pbfSe" value="438698749" />
+    <property role="TrG5h" value="BaseField" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="ZfruYZy2PY" role="PzmwI">
+      <ref role="PrY4T" node="bl22kSmCpX" resolve="IElement" />
+    </node>
+    <node concept="PrWs8" id="ZfruYZy2Q6" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+    <node concept="PrWs8" id="ZfruYZy2Qj" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1q0y93fmn_c">
+    <property role="1pbfSe" value="438697508" />
+    <property role="TrG5h" value="HeaderField" />
+    <property role="34LRSv" value="Header" />
+    <property role="R4oN_" value="ROS Header" />
+    <ref role="1TJDcQ" node="1q0y93fmnhN" resolve="BaseField" />
   </node>
 </model>
 
