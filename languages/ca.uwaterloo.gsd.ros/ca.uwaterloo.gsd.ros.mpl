@@ -6,7 +6,7 @@
     </modelRoot>
   </models>
   <accessoryModels>
-    <model modelUID="r:b8857e95-b5ad-4233-9354-d4e45d6cd55a(ca.uwaterloo.gsd.ros.std_msgs.msgs)" />
+    <model modelUID="r:b8857e95-b5ad-4233-9354-d4e45d6cd55a(ca.uwaterloo.gsd.ros.std_msgs.std_msgs)" />
   </accessoryModels>
   <generators>
     <generator generatorUID="ca.uwaterloo.gsd.ros#1139250107225569088" uuid="ea29e98d-b671-465a-a165-63f0254ff629">
