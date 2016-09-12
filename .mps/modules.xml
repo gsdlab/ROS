@@ -5,7 +5,7 @@
       <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/languages/ca.uwaterloo.gsd.ros/ca.uwaterloo.gsd.ros.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/ca.uwaterloo.gsd.ros/sandbox/ca.uwaterloo.gsd.ros.sandbox.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/ca.uwaterloo.gsd.ros.std_msgs/ca.uwaterloo.gsd.ros.std_msgs.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/ca.uwaterloo.gsd.ros.std_msgs/ca.uwaterloo.gsd.ros.std_msgs.msd" folder="libraries" />
     </projectModules>
   </component>
 </project>

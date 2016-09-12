@@ -23,7 +23,6 @@
         <child id="6864841442060069187" name="value" index="3m6zAC" />
         <child id="6864841442059768623" name="type" index="3m7Cf4" />
       </concept>
-      <concept id="204078314067568528" name="ca.uwaterloo.gsd.ros.structure.EmptyMessageContent" flags="ng" index="UzEYP" />
       <concept id="204078314067480627" name="ca.uwaterloo.gsd.ros.structure.Message" flags="ng" index="UzPwm">
         <child id="1139250107225583851" name="content" index="2KjHO4" />
       </concept>
@@ -37,7 +36,6 @@
       <concept id="1621446021388580552" name="ca.uwaterloo.gsd.ros.structure.ArrayType" flags="ng" index="3pPFTo">
         <child id="1621446021388580565" name="componentType" index="3pPFT5" />
       </concept>
-      <concept id="1621446021388794188" name="ca.uwaterloo.gsd.ros.structure.HeaderField" flags="ng" index="3pQv7s" />
       <concept id="8860443239512128058" name="ca.uwaterloo.gsd.ros.structure.BooleanType" flags="ng" index="3TlMgk" />
       <concept id="8860443239512128103" name="ca.uwaterloo.gsd.ros.structure.NumberLiteral" flags="ng" index="3TlMh9" />
       <concept id="8860443239512128099" name="ca.uwaterloo.gsd.ros.structure.FalseLiteral" flags="ng" index="3TlMhd" />
@@ -55,9 +53,6 @@
   <node concept="UzPwm" id="ZfruYZxuyj">
     <property role="TrG5h" value="Message" />
     <property role="3GE5qa" value="test.test2" />
-    <node concept="3pQv7s" id="7cVn2sA5IW7" role="2KjHO4">
-      <property role="TrG5h" value="header" />
-    </node>
   </node>
   <node concept="UzPwm" id="5X4OeI9orGX">
     <property role="TrG5h" value="Message2" />
@@ -103,7 +98,6 @@
         <ref role="3m97_r" node="5X4OeI9orGX" resolve="Message2" />
       </node>
     </node>
-    <node concept="UzEYP" id="7cVn2sA5xZm" role="2KjHO4" />
   </node>
 </model>
 
