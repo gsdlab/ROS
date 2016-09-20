@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:5113ac75-2cde-4347-8a20-7cd1f88a8fa1(ca.uwaterloo.gsd.ros.sandbox)">
+<model ref="r:5113ac75-2cde-4347-8a20-7cd1f88a8fa1(ca.uwaterloo.gsd.ros.example)">
   <persistence version="9" />
   <languages>
     <use id="73b2b904-2958-48f1-8732-4d9d995324d8" name="ca.uwaterloo.gsd.ros" version="-1" />
@@ -23,6 +23,7 @@
         <child id="6864841442060069187" name="value" index="3m6zAC" />
         <child id="6864841442059768623" name="type" index="3m7Cf4" />
       </concept>
+      <concept id="204078314067568528" name="ca.uwaterloo.gsd.ros.structure.EmptyMessageContent" flags="ng" index="UzEYP" />
       <concept id="204078314067480627" name="ca.uwaterloo.gsd.ros.structure.Message" flags="ng" index="UzPwm">
         <child id="1139250107225583851" name="content" index="2KjHO4" />
       </concept>
@@ -52,7 +53,8 @@
   </registry>
   <node concept="UzPwm" id="ZfruYZxuyj">
     <property role="TrG5h" value="Message" />
-    <property role="3GE5qa" value="test.test2" />
+    <property role="3GE5qa" value="test.test_inner" />
+    <node concept="UzEYP" id="4M57Cl_Mltq" role="2KjHO4" />
   </node>
   <node concept="UzPwm" id="5X4OeI9orGX">
     <property role="TrG5h" value="Message2" />
@@ -92,12 +94,24 @@
         </node>
       </node>
     </node>
-    <node concept="2KhRzL" id="7cVn2sA7FO5" role="2KjHO4">
-      <property role="TrG5h" value="ads" />
-      <node concept="3m97_4" id="7cVn2sA7FO3" role="3m7Cf4">
-        <ref role="3m97_r" node="5X4OeI9orGX" resolve="Message2" />
+    <node concept="UzEYP" id="4M57Cl_LJJX" role="2KjHO4" />
+  </node>
+  <node concept="UzPwm" id="1pNbFbQZVc3">
+    <property role="3GE5qa" value="test3" />
+    <property role="TrG5h" value="message3" />
+    <node concept="2KhRzL" id="1pNbFbQZVcd" role="2KjHO4">
+      <property role="TrG5h" value="m2" />
+      <node concept="3m97_4" id="4M57Cl_LJsU" role="3m7Cf4">
+        <ref role="3m97_r" node="1pNbFbQZVc3" resolve="message3" />
       </node>
     </node>
+    <node concept="UzEYP" id="4M57Cl_LJBh" role="2KjHO4" />
+    <node concept="UzEYP" id="4M57Cl_IdPt" role="2KjHO4" />
+    <node concept="UzEYP" id="4M57Cl_IdPA" role="2KjHO4" />
+  </node>
+  <node concept="UzPwm" id="4M57Cl_LF0k">
+    <property role="3GE5qa" value="test.test_inner" />
+    <property role="TrG5h" value="asd" />
   </node>
 </model>
 

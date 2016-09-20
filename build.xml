@@ -150,6 +150,8 @@
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
           <module ref="fd28f7ed-d277-425b-a282-684ac4cbead6(com.mbeddr.mpsutil.breadcrumb.runtime)" />
+          <module ref="0022e9df-2136-4ef8-81b2-08650aeb1dc7(de.itemis.mps.tooltips.runtime)" />
+          <module ref="f0fff802-6d26-4d2e-b89d-391357265626(de.slisson.mps.hacks.editor)" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
           <module ref="23949432-aaff-4c03-b7da-26e4e956ccea(jetbrains.mps.baseLanguage.regexp.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
@@ -319,10 +321,13 @@
       <library file="${artifacts.mps}/lib/mps-tuples.jar" />
       <library file="${artifacts.mps}/lib/mps-workbench.jar" />
       <library file="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
+      <library file="${artifacts.mps}/plugins/mps-debugger-java/languages/mps-debugger-java/JDK-tools.jar" />
       <library file="${artifacts.mps}/plugins/mps-execution-api/lib/execution-api.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.styles.jar" />
+      <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.tooltips/languages/de.itemis.mps.tooltips/de.itemis.mps.tooltips.jar" />
+      <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.tooltips/languages/de.itemis.mps.tooltips/de.itemis.mps.tooltips.runtime.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.hints.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.runtime.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.hacks.editor.jar" />
@@ -491,6 +496,8 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.tooltips/languages/de.itemis.mps.tooltips/de.itemis.mps.tooltips.runtime.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.hacks.editor.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />

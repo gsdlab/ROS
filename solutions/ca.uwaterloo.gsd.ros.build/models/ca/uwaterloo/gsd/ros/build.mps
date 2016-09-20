@@ -353,6 +353,12 @@
           <property role="3LESm3" value="ea29e98d-b671-465a-a165-63f0254ff629" />
           <property role="2GAjPV" value="false" />
         </node>
+        <node concept="1SiIV0" id="6RNxPdw4zS" role="3bR37C">
+          <node concept="3bR9La" id="6RNxPdw4zT" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:3405ypXZilV" resolve="JDK-tools" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="398rNT" id="23LEVbRX3hP" role="1l3spd">

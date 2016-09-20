@@ -94,12 +94,14 @@
     <dependency reexport="false">7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">daafa647-f1f7-4b0b-b096-69cd7c8408c0(jetbrains.mps.baseLanguage.regexp)</dependency>
+    <dependency reexport="false">b387285c-3448-452c-b3bb-a3f8de8eaf08(JDK-tools)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>
   <languageVersions>
     <language id="53a2e8ff-4795-41ec-949d-d5c6bc4895de" fqName="com.mbeddr.mpsutil.breadcrumb.editor" version="0" />
+    <language id="a0ab8c10-c118-4755-ba27-3853435cf524" fqName="de.itemis.mps.tooltips" version="0" />
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="4" />
     <language id="ed6d7656-532c-4bc2-81d1-af945aeb8280" fqName="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" fqName="jetbrains.mps.baseLanguage.classifiers" version="0" />
@@ -129,6 +131,7 @@
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
+    <module reference="b387285c-3448-452c-b3bb-a3f8de8eaf08(JDK-tools)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" version="0" />
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
