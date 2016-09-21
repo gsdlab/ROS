@@ -84,6 +84,9 @@
     <node concept="PrWs8" id="6s8egifgElZ" role="PzmwI">
       <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
     </node>
+    <node concept="PrWs8" id="6RNxPdxpmJ" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
+    </node>
   </node>
   <node concept="PlHQZ" id="bl22kSmCpX">
     <property role="TrG5h" value="IElement" />
@@ -290,6 +293,9 @@
     <node concept="PrWs8" id="3uQHHjfUZrz" role="PzmwI">
       <ref role="PrY4T" node="7FQByU3C_31" resolve="IComparable" />
     </node>
+    <node concept="PrWs8" id="6RNxPdwbpC" role="PzmwI">
+      <ref role="PrY4T" node="6RNxPdw9sJ" resolve="I8BitsType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7G6iUFOh4op">
     <property role="TrG5h" value="Float64Type" />
@@ -298,6 +304,9 @@
     <property role="R4oN_" value="64-bit IEEE float" />
     <property role="1pbfSe" value="1867157955" />
     <ref role="1TJDcQ" node="7VU$pJBYM1N" resolve="PrimitiveIEEE754Type" />
+    <node concept="PrWs8" id="6RNxPdwbpI" role="PzmwI">
+      <ref role="PrY4T" node="6RNxPdw9sM" resolve="I64BitsType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7VU$pJBYM1N">
     <property role="3GE5qa" value="expressions.types.float" />
@@ -320,6 +329,9 @@
     <property role="34LRSv" value="int8" />
     <property role="1pbfSe" value="23570278" />
     <ref role="1TJDcQ" node="4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
+    <node concept="PrWs8" id="6RNxPdwbpS" role="PzmwI">
+      <ref role="PrY4T" node="6RNxPdw9sJ" resolve="I8BitsType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4Pack3zS1Zq">
     <property role="3GE5qa" value="expressions.types.int" />
@@ -350,6 +362,9 @@
     <property role="1pbfSe" value="391954084" />
     <property role="R4oN_" value="32-bit IEEE float" />
     <ref role="1TJDcQ" node="7VU$pJBYM1N" resolve="PrimitiveIEEE754Type" />
+    <node concept="PrWs8" id="6RNxPdwbpG" role="PzmwI">
+      <ref role="PrY4T" node="6RNxPdw9sL" resolve="I32BitsType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5X4OeI9nB1M">
     <property role="TrG5h" value="UInt8Type" />
@@ -358,6 +373,9 @@
     <property role="34LRSv" value="uint8" />
     <property role="1pbfSe" value="391954083" />
     <ref role="1TJDcQ" node="4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
+    <node concept="PrWs8" id="6RNxPdwbq0" role="PzmwI">
+      <ref role="PrY4T" node="6RNxPdw9sJ" resolve="I8BitsType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5X4OeI9nB1N">
     <property role="TrG5h" value="Int16Type" />
@@ -366,6 +384,9 @@
     <property role="34LRSv" value="int16" />
     <property role="1pbfSe" value="391954082" />
     <ref role="1TJDcQ" node="4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
+    <node concept="PrWs8" id="6RNxPdwbpM" role="PzmwI">
+      <ref role="PrY4T" node="6RNxPdw9sK" resolve="I16BitsType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5X4OeI9nB1O">
     <property role="TrG5h" value="UInt16Type" />
@@ -374,6 +395,9 @@
     <property role="34LRSv" value="uint16" />
     <property role="1pbfSe" value="391954081" />
     <ref role="1TJDcQ" node="4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
+    <node concept="PrWs8" id="6RNxPdwbpU" role="PzmwI">
+      <ref role="PrY4T" node="6RNxPdw9sK" resolve="I16BitsType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5X4OeI9nB1P">
     <property role="TrG5h" value="Int64Type" />
@@ -382,6 +406,9 @@
     <property role="34LRSv" value="int64" />
     <property role="1pbfSe" value="391954080" />
     <ref role="1TJDcQ" node="4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
+    <node concept="PrWs8" id="6RNxPdwbpQ" role="PzmwI">
+      <ref role="PrY4T" node="6RNxPdw9sM" resolve="I64BitsType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5X4OeI9nB1Q">
     <property role="TrG5h" value="UInt64Type" />
@@ -390,6 +417,9 @@
     <property role="34LRSv" value="uint64" />
     <property role="1pbfSe" value="391954079" />
     <ref role="1TJDcQ" node="4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
+    <node concept="PrWs8" id="6RNxPdwbpY" role="PzmwI">
+      <ref role="PrY4T" node="6RNxPdw9sM" resolve="I64BitsType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5X4OeI9nB1X">
     <property role="TrG5h" value="Int32Type" />
@@ -398,6 +428,9 @@
     <property role="34LRSv" value="int32" />
     <property role="1pbfSe" value="391954072" />
     <ref role="1TJDcQ" node="4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
+    <node concept="PrWs8" id="6RNxPdwbpO" role="PzmwI">
+      <ref role="PrY4T" node="6RNxPdw9sL" resolve="I32BitsType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5X4OeI9nB1Y">
     <property role="TrG5h" value="UInt32Type" />
@@ -406,6 +439,9 @@
     <property role="34LRSv" value="uint32" />
     <property role="1pbfSe" value="391954071" />
     <ref role="1TJDcQ" node="4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
+    <node concept="PrWs8" id="6RNxPdwbpW" role="PzmwI">
+      <ref role="PrY4T" node="6RNxPdw9sL" resolve="I32BitsType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5X4OeI9nB1Z">
     <property role="TrG5h" value="TimeType" />
@@ -413,7 +449,7 @@
     <property role="R4oN_" value="secs/nsecs unsigned 32-bit ints" />
     <property role="34LRSv" value="time" />
     <property role="1pbfSe" value="391954070" />
-    <ref role="1TJDcQ" node="4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
+    <ref role="1TJDcQ" node="5X4OeI9nB1Y" resolve="UInt32Type" />
   </node>
   <node concept="1TIwiD" id="5X4OeI9nB20">
     <property role="TrG5h" value="DurationType" />
@@ -421,7 +457,7 @@
     <property role="34LRSv" value="duration" />
     <property role="1pbfSe" value="391954069" />
     <property role="R4oN_" value="secs/nsecs signed 32-bit ints" />
-    <ref role="1TJDcQ" node="4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
+    <ref role="1TJDcQ" node="5X4OeI9nB1X" resolve="Int32Type" />
   </node>
   <node concept="1TIwiD" id="5X4OeI9oaAJ">
     <property role="1pbfSe" value="391808358" />
@@ -506,8 +542,28 @@
     <property role="R4oN_" value="deprecated alias for uint8" />
     <property role="34LRSv" value="char" />
     <property role="1pbfSe" value="1721806597" />
-    <ref role="1TJDcQ" node="4Pack3zS1Zq" resolve="PrimitiveBasicIntegralType" />
+    <ref role="1TJDcQ" node="5X4OeI9nB1M" resolve="UInt8Type" />
     <node concept="asaX9" id="7cVn2sA8Zju" role="lGtFl" />
+  </node>
+  <node concept="PlHQZ" id="6RNxPdw9sJ">
+    <property role="1pbfSe" value="1329096012" />
+    <property role="3GE5qa" value="expressions.types" />
+    <property role="TrG5h" value="I8BitsType" />
+  </node>
+  <node concept="PlHQZ" id="6RNxPdw9sK">
+    <property role="1pbfSe" value="1329096013" />
+    <property role="3GE5qa" value="expressions.types" />
+    <property role="TrG5h" value="I16BitsType" />
+  </node>
+  <node concept="PlHQZ" id="6RNxPdw9sL">
+    <property role="1pbfSe" value="1329096014" />
+    <property role="3GE5qa" value="expressions.types" />
+    <property role="TrG5h" value="I32BitsType" />
+  </node>
+  <node concept="PlHQZ" id="6RNxPdw9sM">
+    <property role="1pbfSe" value="1329096015" />
+    <property role="3GE5qa" value="expressions.types" />
+    <property role="TrG5h" value="I64BitsType" />
   </node>
 </model>
 

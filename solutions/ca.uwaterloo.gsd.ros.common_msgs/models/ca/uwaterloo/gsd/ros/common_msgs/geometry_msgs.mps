@@ -478,7 +478,7 @@
     </node>
   </node>
   <node concept="UzPwm" id="7cVn2sAa18q">
-    <property role="TrG5h" value="PoseArray " />
+    <property role="TrG5h" value="PoseArray" />
     <node concept="g8znO" id="7cVn2sAa18x" role="2KjHO4">
       <node concept="3SKdUq" id="7cVn2sAa18y" role="3SKWNk">
         <property role="3SKdUp" value="An array of poses with a header for global reference." />
@@ -520,7 +520,7 @@
     </node>
   </node>
   <node concept="UzPwm" id="7cVn2sAa1aa">
-    <property role="TrG5h" value="PoseWithCovariance " />
+    <property role="TrG5h" value="PoseWithCovariance" />
     <node concept="g8znO" id="7cVn2sAa1ah" role="2KjHO4">
       <node concept="3SKdUq" id="7cVn2sAa1ai" role="3SKWNk">
         <property role="3SKdUp" value="This represents a pose in free space with uncertainty." />
@@ -582,7 +582,7 @@
     <node concept="2KhRzL" id="7cVn2sAa1rT" role="2KjHO4">
       <property role="TrG5h" value="pose" />
       <node concept="3m97_4" id="7cVn2sAa1rR" role="3m7Cf4">
-        <ref role="3m97_r" node="7cVn2sAa1aa" resolve="PoseWithCovariance " />
+        <ref role="3m97_r" node="7cVn2sAa1aa" resolve="PoseWithCovariance" />
       </node>
     </node>
   </node>
