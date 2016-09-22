@@ -145,34 +145,10 @@
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
-  <node concept="PlHQZ" id="7FQByU3C_31">
-    <property role="TrG5h" value="IComparable" />
-    <property role="3GE5qa" value="expressions.types" />
-    <property role="1pbfSe" value="23531793" />
-  </node>
-  <node concept="PlHQZ" id="4ZVDCZCaQ86">
-    <property role="TrG5h" value="INumber" />
-    <property role="3GE5qa" value="expressions.types" />
-    <property role="1pbfSe" value="942082197" />
-    <node concept="PrWs8" id="1xPdI77HMSJ" role="PrDN$">
-      <ref role="PrY4T" node="4ZVDCZCa$xx" resolve="IOrdered" />
-    </node>
-    <node concept="PrWs8" id="3up5rlxN5AG" role="PrDN$">
-      <ref role="PrY4T" node="3up5rlxN5AE" resolve="INumeric" />
-    </node>
-  </node>
   <node concept="PlHQZ" id="3up5rlxN5AE">
     <property role="3GE5qa" value="expressions.types" />
     <property role="TrG5h" value="INumeric" />
     <property role="1pbfSe" value="1721405601" />
-  </node>
-  <node concept="PlHQZ" id="4ZVDCZCa$xx">
-    <property role="TrG5h" value="IOrdered" />
-    <property role="3GE5qa" value="expressions.types" />
-    <property role="1pbfSe" value="942010096" />
-    <node concept="PrWs8" id="1xPdI77HX_z" role="PrDN$">
-      <ref role="PrY4T" node="7FQByU3C_31" resolve="IComparable" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7FQByU3CrCQ">
     <property role="TrG5h" value="Type" />
@@ -290,9 +266,6 @@
     <property role="34LRSv" value="bool" />
     <property role="1pbfSe" value="23570328" />
     <ref role="1TJDcQ" node="7FQByU3CrCS" resolve="PrimitiveType" />
-    <node concept="PrWs8" id="3uQHHjfUZrz" role="PzmwI">
-      <ref role="PrY4T" node="7FQByU3C_31" resolve="IComparable" />
-    </node>
     <node concept="PrWs8" id="6RNxPdwbpC" role="PzmwI">
       <ref role="PrY4T" node="6RNxPdw9sJ" resolve="I8BitsType" />
     </node>
@@ -315,9 +288,6 @@
     <property role="R5$K7" value="true" />
     <property role="1pbfSe" value="1727377934" />
     <ref role="1TJDcQ" node="7FQByU3CrCS" resolve="PrimitiveType" />
-    <node concept="PrWs8" id="3uQHHjfUZrC" role="PzmwI">
-      <ref role="PrY4T" node="4ZVDCZCa$xx" resolve="IOrdered" />
-    </node>
     <node concept="PrWs8" id="3uQHHjfUZrI" role="PzmwI">
       <ref role="PrY4T" node="3up5rlxN5AE" resolve="INumeric" />
     </node>
@@ -342,9 +312,6 @@
     <ref role="1TJDcQ" node="7FQByU3CrCS" resolve="PrimitiveType" />
     <node concept="PrWs8" id="3uQHHjfV4Fd" role="PzmwI">
       <ref role="PrY4T" node="3up5rlxN5AE" resolve="INumeric" />
-    </node>
-    <node concept="PrWs8" id="3uQHHjfV4F7" role="PzmwI">
-      <ref role="PrY4T" node="4ZVDCZCa$xx" resolve="IOrdered" />
     </node>
   </node>
   <node concept="1TIwiD" id="1spqZOskJPs">
