@@ -444,6 +444,10 @@
     <property role="3GE5qa" value="expressions.types" />
     <property role="TrG5h" value="ArrayType" />
     <ref role="1TJDcQ" node="7FQByU3CrCQ" resolve="Type" />
+    <node concept="1TJgyi" id="2g2kRFKIMi" role="1TKVEl">
+      <property role="TrG5h" value="size" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
     <node concept="1TJgyj" id="1q0y93flzrl" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="componentType" />

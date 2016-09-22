@@ -6,6 +6,9 @@
     </modelRoot>
   </models>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">5c180915-6ab7-44b3-a3c5-1359a6b8a44e(ca.uwaterloo.gsd.ros.common_msgs)</dependency>
+  </dependencies>
   <languageVersions>
     <language id="73b2b904-2958-48f1-8732-4d9d995324d8" fqName="ca.uwaterloo.gsd.ros" version="-1" />
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" fqName="com.mbeddr.core.base" version="3" />
@@ -28,6 +31,7 @@
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
   </languageVersions>
   <dependencyVersions>
+    <module reference="5c180915-6ab7-44b3-a3c5-1359a6b8a44e(ca.uwaterloo.gsd.ros.common_msgs)" version="0" />
     <module reference="51ae8cb6-e36d-4c40-9d63-ef875c658a48(ca.uwaterloo.gsd.ros.sandbox)" version="0" />
   </dependencyVersions>
 </solution>

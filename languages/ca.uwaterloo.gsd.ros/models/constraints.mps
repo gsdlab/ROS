@@ -1022,5 +1022,9 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="2g2kRFM7XS">
+    <property role="3GE5qa" value="expressions.types" />
+    <ref role="1M2myG" to="smma:1q0y93flzr8" resolve="ArrayType" />
+  </node>
 </model>
 
