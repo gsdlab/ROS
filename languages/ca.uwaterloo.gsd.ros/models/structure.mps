@@ -536,5 +536,44 @@
     <property role="3GE5qa" value="expressions.types" />
     <property role="TrG5h" value="I64BitsType" />
   </node>
+  <node concept="1TIwiD" id="2g2kRFNBfC">
+    <property role="1pbfSe" value="329351883" />
+    <property role="TrG5h" value="FieldReference" />
+    <property role="3GE5qa" value="template" />
+    <ref role="1TJDcQ" node="1q0y93fmnhN" resolve="BaseField" />
+    <node concept="1TJgyj" id="18Q9s9Cf9ev" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <ref role="20lvS9" node="7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="2g2kRFOlU9" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="field" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="ZfruYZy1ku" resolve="Field" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2g2kRFNDKJ">
+    <property role="1pbfSe" value="329341572" />
+    <property role="TrG5h" value="MessageTemplate" />
+    <property role="34LRSv" value="template" />
+    <property role="3GE5qa" value="template" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2g2kRFRbL1" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="message" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="bl22kSm_0N" resolve="Message" />
+    </node>
+    <node concept="1TJgyj" id="2g2kRFO36x" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="fields" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="2g2kRFNBfC" resolve="FieldReference" />
+    </node>
+    <node concept="PrWs8" id="2g2kRFNDLq" role="PzmwI">
+      <ref role="PrY4T" node="bl22kSmCpX" resolve="IElement" />
+    </node>
+  </node>
 </model>
 
