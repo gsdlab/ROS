@@ -7,6 +7,7 @@
       <modulePath path="$PROJECT_DIR$/languages/ca.uwaterloo.gsd.ros/sandbox/ca.uwaterloo.gsd.ros.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ca.uwaterloo.gsd.ros.build/ca.uwaterloo.gsd.ros.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ca.uwaterloo.gsd.ros.common_msgs/ca.uwaterloo.gsd.ros.common_msgs.msd" folder="libraries" />
+      <modulePath path="$PROJECT_DIR$/solutions/ca.uwaterloo.gsd.ros.plugin/ca.uwaterloo.gsd.ros.plugin.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ca.uwaterloo.gsd.ros.std_msgs/ca.uwaterloo.gsd.ros.std_msgs.msd" folder="libraries" />
     </projectModules>
   </component>

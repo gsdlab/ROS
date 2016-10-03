@@ -10,6 +10,7 @@
     <import index="smma" ref="r:6dd7a1b0-6b62-4500-801b-a912a27c7d20(ca.uwaterloo.gsd.ros.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="unxk" ref="r:b0faaa88-dc78-4f2c-8707-1d0e97d6b502(ca.uwaterloo.gsd.ros.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -65,6 +66,9 @@
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -88,6 +92,12 @@
         <child id="1175147624276" name="body" index="2sgrp5" />
       </concept>
       <concept id="1175147670730" name="jetbrains.mps.lang.typesystem.structure.SubtypingRule" flags="ig" index="2sgARr" />
+      <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
+        <child id="1175517851849" name="errorString" index="2MkJ7o" />
+      </concept>
+      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
+        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
+      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <property id="1195213689297" name="overrides" index="18ip37" />
         <child id="1195213635060" name="body" index="18ibNy" />
@@ -123,6 +133,7 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -563,6 +574,38 @@
     <node concept="1YaCAy" id="1q0y93fjNeo" role="1YuTPh">
       <property role="TrG5h" value="nl" />
       <ref role="1YaFvo" to="smma:7FQByU3CrDB" resolve="NumberLiteral" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="6JV68EXBCTa">
+    <property role="TrG5h" value="check_MessageTemplate" />
+    <property role="3GE5qa" value="template" />
+    <node concept="3clFbS" id="6JV68EXBCTb" role="18ibNy">
+      <node concept="3clFbJ" id="6JV68EXBGfZ" role="3cqZAp">
+        <node concept="3clFbS" id="6JV68EXBGg1" role="3clFbx">
+          <node concept="2MkqsV" id="6JV68EXC8w$" role="3cqZAp">
+            <node concept="Xl_RD" id="6JV68EXC8xb" role="2MkJ7o">
+              <property role="Xl_RC" value="Template needs to be updated" />
+            </node>
+            <node concept="1YBJjd" id="6JV68EXC8y_" role="2OEOjV">
+              <ref role="1YBMHb" node="6JV68EXBCTd" resolve="messageTemplate" />
+            </node>
+          </node>
+        </node>
+        <node concept="3fqX7Q" id="6JV68EXBO$T" role="3clFbw">
+          <node concept="2OqwBi" id="6JV68EXBOD2" role="3fr31v">
+            <node concept="1YBJjd" id="6JV68EXBO_d" role="2Oq$k0">
+              <ref role="1YBMHb" node="6JV68EXBCTd" resolve="messageTemplate" />
+            </node>
+            <node concept="2qgKlT" id="6JV68EXBOMl" role="2OqNvi">
+              <ref role="37wK5l" to="unxk:6JV68EXBMRg" resolve="isSynchronized" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6JV68EXBCTd" role="1YuTPh">
+      <property role="TrG5h" value="messageTemplate" />
+      <ref role="1YaFvo" to="smma:2g2kRFNDKJ" resolve="MessageTemplate" />
     </node>
   </node>
 </model>
