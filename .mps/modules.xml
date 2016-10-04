@@ -3,11 +3,13 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
-      <modulePath path="$PROJECT_DIR$/languages/ca.uwaterloo.gsd.ros/ca.uwaterloo.gsd.ros.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/ca.uwaterloo.gsd.ros/sandbox/ca.uwaterloo.gsd.ros.sandbox.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/ca.uwaterloo.gsd.ros.build/ca.uwaterloo.gsd.ros.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/ca.uwaterloo.gsd.ros.diagrams/ca.uwaterloo.gsd.ros.diagrams.mpl" folder="diagrams" />
+      <modulePath path="$PROJECT_DIR$/languages/ca.uwaterloo.gsd.ros.diagrams/sandbox/ca.uwaterloo.gsd.ros.diagrams.sandbox.msd" folder="diagrams" />
+      <modulePath path="$PROJECT_DIR$/languages/ca.uwaterloo.gsd.ros/ca.uwaterloo.gsd.ros.mpl" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/ca.uwaterloo.gsd.ros/sandbox/ca.uwaterloo.gsd.ros.sandbox.msd" folder="core" />
+      <modulePath path="$PROJECT_DIR$/solutions/ca.uwaterloo.gsd.ros.build/ca.uwaterloo.gsd.ros.build.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/solutions/ca.uwaterloo.gsd.ros.common_msgs/ca.uwaterloo.gsd.ros.common_msgs.msd" folder="libraries" />
-      <modulePath path="$PROJECT_DIR$/solutions/ca.uwaterloo.gsd.ros.plugin/ca.uwaterloo.gsd.ros.plugin.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/ca.uwaterloo.gsd.ros.plugin/ca.uwaterloo.gsd.ros.plugin.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/ca.uwaterloo.gsd.ros.std_msgs/ca.uwaterloo.gsd.ros.std_msgs.msd" folder="libraries" />
     </projectModules>
   </component>
