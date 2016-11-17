@@ -628,6 +628,10 @@
     <node concept="PrWs8" id="7Mf_WfKo44X" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
+    <node concept="1TJgyi" id="VPJ_48UZmb" role="1TKVEl">
+      <property role="TrG5h" value="frequency" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
 </model>
 

@@ -25,9 +25,14 @@
       <concept id="4835973625144381654" name="org.clafer.architecture.core.structure.ArchElement" flags="ng" index="2mZOiP">
         <child id="4835973625144381739" name="contents" index="2mZOl8" />
       </concept>
+      <concept id="8184504237206090365" name="org.clafer.architecture.core.structure.ISimpleConnector" flags="ng" index="3SN050">
+        <child id="3246930885582290891" name="targetExpr" index="3grLm$" />
+        <child id="3246930885582290884" name="sourceExpr" index="3grLmF" />
+      </concept>
     </language>
     <language id="73b2b904-2958-48f1-8732-4d9d995324d8" name="ca.uwaterloo.gsd.ros">
       <concept id="8975559450179944759" name="ca.uwaterloo.gsd.ros.structure.Topic" flags="ng" index="2cVXrO">
+        <property id="1077976941076411787" name="frequency" index="67$Jq" />
         <child id="2948253616250863623" name="type" index="8zCOc" />
         <child id="8975559450179956446" name="desctiption" index="2cVZ$t" />
       </concept>
@@ -39,10 +44,6 @@
     <language id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture">
       <concept id="4835973625144817188" name="org.clafer.architecture.structure.FunctionalDevice" flags="ng" index="2mXI97" />
       <concept id="4835973625144396295" name="org.clafer.architecture.structure.AnalysisFunction" flags="ng" index="2mZLT$" />
-      <concept id="2141331924789116591" name="org.clafer.architecture.structure.FunctionConnector" flags="ng" index="1eXri_">
-        <child id="1293377804022658520" name="sourceExpr" index="28Pzmq" />
-        <child id="1293377804022658528" name="targetExpr" index="28Pzmy" />
-      </concept>
       <concept id="8817732347957866929" name="org.clafer.architecture.structure.FunctionalAnalysis" flags="ng" index="1u8h5F" />
     </language>
     <language id="3f0fb7b1-8144-47d6-9fce-415efc226af6" name="ca.uwaterloo.gsd.ros.diagrams">
@@ -113,15 +114,16 @@
         <property role="TrG5h" value="fDevice" />
       </node>
       <node concept="UzEYP" id="1JOdLtDEql7" role="2mZOl8" />
-      <node concept="3IENS3" id="1JOdLtDEqln" role="2mZOl8">
+      <node concept="3IENS3" id="VPJ_48XAYB" role="2mZOl8">
         <ref role="1MnttX" node="2zEjgGwrvML" resolve="/emergency_stop" />
-        <node concept="ZpONE" id="2zEjgGwp1sv" role="28Pzmq">
+        <node concept="ZpONE" id="VPJ_48XFI8" role="3grLmF">
           <ref role="ZpOSt" node="1JOdLtDEqkS" resolve="aFunction" />
         </node>
-        <node concept="ZpONE" id="1JOdLtDEt3C" role="28Pzmy">
+        <node concept="ZpONE" id="VPJ_48XFIh" role="3grLm$">
           <ref role="ZpOSt" node="1JOdLtDEql1" resolve="fDevice" />
         </node>
       </node>
+      <node concept="UzEYP" id="VPJ_48XAY7" role="2mZOl8" />
       <node concept="37mRI7" id="1JOdLtDEt3N" role="lGtFl">
         <node concept="37mRIm" id="1JOdLtDEt3O" role="37mRID">
           <property role="37mO49" value="2014295507037955384" />
@@ -136,8 +138,8 @@
         <node concept="37mRIm" id="1JOdLtDEt3Q" role="37mRID">
           <property role="37mO49" value="2014295507037955393" />
           <node concept="gqqVs" id="1JOdLtDEt3P" role="37mO4d">
-            <property role="gqqTZ" value="503.0002746582031" />
-            <property role="gqqTW" value="207.99995040893555" />
+            <property role="gqqTZ" value="410.0002746582031" />
+            <property role="gqqTW" value="19.999950408935547" />
             <property role="gqqTX" value="118.0" />
             <property role="gqqTy" value="36.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
@@ -239,6 +241,50 @@
             </node>
           </node>
         </node>
+        <node concept="37mRIm" id="VPJ_48XFIM" role="37mRID">
+          <property role="37mO49" value="1077976941077098407" />
+          <node concept="2VclpC" id="VPJ_48XFIL" role="37mO4d">
+            <node concept="3ul5H1" id="VPJ_48XFIP" role="3ul5Gx">
+              <property role="3ul5GH" value="label" />
+              <node concept="3wpmZ1" id="VPJ_48XFIQ" role="3ul5Gz">
+                <node concept="2VclrF" id="VPJ_48XFIR" role="3wpmZR">
+                  <property role="2Vclpx" value="-93.49980163574219" />
+                  <property role="2Vclpz" value="-51.99995040893555" />
+                </node>
+                <node concept="2VclrF" id="VPJ_48XFIS" role="3wpmZP">
+                  <property role="2Vclpx" value="266.5" />
+                  <property role="2Vclpz" value="63.99995040893555" />
+                </node>
+              </node>
+            </node>
+            <node concept="3ul5H1" id="VPJ_48XFIT" role="3ul5Gx">
+              <property role="3ul5GH" value="startRole" />
+              <node concept="3wpmZ1" id="VPJ_48XFIU" role="3ul5Gz">
+                <node concept="2VclrF" id="VPJ_48XFIV" role="3wpmZR">
+                  <property role="2Vclpx" value="-0.13374820759597128" />
+                  <property role="2Vclpz" value="-1.9638425285846068" />
+                </node>
+                <node concept="2VclrF" id="VPJ_48XFIW" role="3wpmZP">
+                  <property role="2Vclpx" value="137.48528137423858" />
+                  <property role="2Vclpz" value="63.99995040893555" />
+                </node>
+              </node>
+            </node>
+            <node concept="3ul5H1" id="VPJ_48XFIX" role="3ul5Gx">
+              <property role="3ul5GH" value="endRole" />
+              <node concept="3wpmZ1" id="VPJ_48XFIY" role="3ul5Gz">
+                <node concept="2VclrF" id="VPJ_48XFIZ" role="3wpmZR">
+                  <property role="2Vclpx" value="93.1337487160576" />
+                  <property role="2Vclpz" value="186.03615375573406" />
+                </node>
+                <node concept="2VclrF" id="VPJ_48XFJ0" role="3wpmZP">
+                  <property role="2Vclpx" value="395.5147186257614" />
+                  <property role="2Vclpz" value="63.99995040893555" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -246,6 +292,7 @@
     <property role="TrG5h" value="Topics" />
     <node concept="2cVXrO" id="2zEjgGwrvML" role="2cVYSo">
       <property role="TrG5h" value="/emergency_stop" />
+      <property role="67$Jq" value="1" />
       <node concept="3m6E2q" id="2zEjgGwrvMU" role="8zCOc" />
       <node concept="19SGf9" id="2zEjgGwrwAT" role="2cVZ$t">
         <node concept="19SUe$" id="2zEjgGwrwAU" role="19SJt6">

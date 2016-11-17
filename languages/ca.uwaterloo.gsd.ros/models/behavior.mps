@@ -4834,7 +4834,23 @@
   <node concept="13h7C7" id="7Mf_WfKo45U">
     <ref role="13h7C2" to="smma:7Mf_WfKo44R" resolve="Topic" />
     <node concept="13hLZK" id="7Mf_WfKo45V" role="13h7CW">
-      <node concept="3clFbS" id="7Mf_WfKo45W" role="2VODD2" />
+      <node concept="3clFbS" id="7Mf_WfKo45W" role="2VODD2">
+        <node concept="3clFbF" id="VPJ_48V4$Y" role="3cqZAp">
+          <node concept="2OqwBi" id="VPJ_48V6m3" role="3clFbG">
+            <node concept="2OqwBi" id="VPJ_48V4Bl" role="2Oq$k0">
+              <node concept="13iPFW" id="VPJ_48V4$X" role="2Oq$k0" />
+              <node concept="3TrcHB" id="VPJ_48V4N7" role="2OqNvi">
+                <ref role="3TsBF5" to="smma:VPJ_48UZmb" resolve="frequency" />
+              </node>
+            </node>
+            <node concept="tyxLq" id="VPJ_48V6sC" role="2OqNvi">
+              <node concept="3cmrfG" id="VPJ_48V6tG" role="tz02z">
+                <property role="3cmrfH" value="1" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="7Mf_WfKpKlH">

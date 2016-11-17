@@ -14,6 +14,7 @@
     <dependency reexport="false">642f71f8-327a-425b-84f9-44ad58786d27(jetbrains.mps.lang.project.modules)</dependency>
     <dependency reexport="false">752496a0-da43-4b5e-bd15-ea1a5aa211f6(com.mbeddr.allScripts)</dependency>
     <dependency reexport="false">cbbb9e79-84e5-4c2e-b1a2-11a381c7baf9(com.mbeddr.allInOne)</dependency>
+    <dependency reexport="false">a7e1cbe7-1475-4533-8f0e-c1f090dc29ac(org.clafer.mps.build)</dependency>
   </dependencies>
   <languageVersions>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" fqName="jetbrains.mps.build" version="0" />
@@ -33,6 +34,7 @@
     <module reference="f1fb7b1c-ce0d-423c-9369-4a661d600029(de.slisson.mps.all.build)" version="0" />
     <module reference="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" version="0" />
     <module reference="642f71f8-327a-425b-84f9-44ad58786d27(jetbrains.mps.lang.project.modules)" version="0" />
+    <module reference="a7e1cbe7-1475-4533-8f0e-c1f090dc29ac(org.clafer.mps.build)" version="0" />
   </dependencyVersions>
 </solution>
 

@@ -12,6 +12,7 @@
     <import index="p6ld" ref="r:0764bd79-eef9-46f0-a6fe-739a07a30bb2(com.mbeddr.build.build)" />
     <import index="3fk" ref="r:caa661d5-e529-469c-bb25-dfa7a83b768e(com.mbeddr.allScripts.build)" />
     <import index="xsd6" ref="r:ca2b582e-fdcb-4767-9d74-cf61b47911f2(com.mbeddr.allInOne)" />
+    <import index="pc30" ref="r:f8e68dba-aeb5-4ff6-866a-6538c78bd218(org.clafer.mps.build)" />
   </imports>
   <registry>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -192,6 +193,12 @@
         <ref role="398BVh" node="7cVn2sAa3WS" resolve="mbeddr.allInOne.artifacts" />
       </node>
     </node>
+    <node concept="2sgV4H" id="VPJ_48Yesm" role="1l3spa">
+      <ref role="1l3spb" to="pc30:7yXle6M6CnR" resolve="org.clafer.all" />
+      <node concept="398BVA" id="VPJ_48Yeue" role="2JcizS">
+        <ref role="398BVh" node="VPJ_48Y88s" resolve="org.clafer.allInOne.artifacts" />
+      </node>
+    </node>
     <node concept="m$_wf" id="1YLj_r8S1Mc" role="3989C9">
       <property role="m$_wk" value="ros" />
       <node concept="m$_yC" id="1YLj_r8S1OV" role="m$_yJ">
@@ -199,6 +206,9 @@
       </node>
       <node concept="m$_yC" id="7cVn2sAa4vZ" role="m$_yJ">
         <ref role="m$_y1" to="p6ld:7uZw0yZ43Jz" resolve="com.mbeddr.core" />
+      </node>
+      <node concept="m$_yC" id="VPJ_48Yevy" role="m$_yJ">
+        <ref role="m$_y1" to="pc30:7yXle6M6Cpm" resolve="org.clafer.all" />
       </node>
       <node concept="m$f5U" id="1YLj_r8S5eN" role="m$_yh">
         <ref role="m$f5T" node="1YLj_r8S5ep" resolve="ca.uwaterloo.gsd.ros" />
@@ -210,7 +220,7 @@
       </node>
       <node concept="3_J27D" id="1YLj_r8S1Mg" role="m$_w8">
         <node concept="3Mxwew" id="1YLj_r8S1Ns" role="3MwsjC">
-          <property role="3MwjfP" value="0.1" />
+          <property role="3MwjfP" value="0.2" />
         </node>
       </node>
       <node concept="3_J27D" id="1YLj_r8S1Mi" role="m$_yQ">
@@ -401,35 +411,108 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtD" id="VPJ_48Y817" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="ca.uwaterloo.gsd.ros.diagrams" />
+        <property role="3LESm3" value="3f0fb7b1-8144-47d6-9fce-415efc226af6" />
+        <property role="2GAjPV" value="false" />
+        <node concept="55IIr" id="VPJ_48Y818" role="3LF7KH">
+          <node concept="2Ry0Ak" id="VPJ_48Y819" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="VPJ_48Y85r" role="2Ry0An">
+              <property role="2Ry0Am" value="ca.uwaterloo.gsd.ros.diagrams" />
+              <node concept="2Ry0Ak" id="VPJ_48Y85y" role="2Ry0An">
+                <property role="2Ry0Am" value="ca.uwaterloo.gsd.ros.diagrams.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1yeLz9" id="VPJ_48Y81c" role="1TViLv">
+          <property role="TrG5h" value="ca.uwaterloo.gsd.ros.diagrams#3288194778604846174" />
+          <property role="3LESm3" value="9b06f23f-c9dd-40ad-bb49-b75f9c20351a" />
+          <property role="2GAjPV" value="false" />
+        </node>
+        <node concept="1SiIV0" id="VPJ_48Y81l" role="3bR37C">
+          <node concept="3bR9La" id="VPJ_48Y81m" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="VPJ_48Y81t" role="3bR37C">
+          <node concept="3bR9La" id="VPJ_48Y81u" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="VPJ_48Y8kd" role="3bR37C">
+          <node concept="3bR9La" id="VPJ_48Y8ke" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="pc30:2FS8nA5aNmY" resolve="org.clafer.expressions" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="VPJ_48Y8kf" role="3bR37C">
+          <node concept="3bR9La" id="VPJ_48Y8kg" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" node="7cVn2sAakx0" resolve="ca.uwaterloo.gsd.ros" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="VPJ_48Y8kh" role="3bR37C">
+          <node concept="3bR9La" id="VPJ_48Y8ki" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="pc30:2FS8nA5aNmt" resolve="org.clafer.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="VPJ_48Y8kj" role="3bR37C">
+          <node concept="1Busua" id="VPJ_48Y8kk" role="1SiIV1">
+            <ref role="1Busuk" to="pc30:7NFmM4jL5Yr" resolve="org.clafer.architecture" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="VPJ_48Y8kl" role="3bR37C">
+          <node concept="1Busua" id="VPJ_48Y8km" role="1SiIV1">
+            <ref role="1Busuk" node="7cVn2sAakx0" resolve="ca.uwaterloo.gsd.ros" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="VPJ_48Y8kn" role="3bR37C">
+          <node concept="1Busua" id="VPJ_48Y8ko" role="1SiIV1">
+            <ref role="1Busuk" to="pc30:7NFmM4jKXYk" resolve="org.clafer.architecture.core" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="398rNT" id="23LEVbRX3hP" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
       <node concept="55IIr" id="7cVn2sAa3CA" role="398pKh">
         <node concept="2Ry0Ak" id="7cVn2sAa3CE" role="iGT6I">
           <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="7cVn2sAaiRq" role="2Ry0An">
-            <property role="2Ry0Am" value="MPS" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="398rNT" id="7cVn2sAa3K4" role="1l3spd">
-      <property role="TrG5h" value="mbeddr.github.core.home" />
-      <node concept="55IIr" id="7cVn2sAa3LM" role="398pKh">
-        <node concept="2Ry0Ak" id="7cVn2sAa3LQ" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="7cVn2sAa3LX" role="2Ry0An">
-            <property role="2Ry0Am" value="mbeddr.core" />
+          <node concept="2Ry0Ak" id="VPJ_48XHE7" role="2Ry0An">
+            <property role="2Ry0Am" value=".." />
+            <node concept="2Ry0Ak" id="VPJ_48XHEh" role="2Ry0An">
+              <property role="2Ry0Am" value="MPS" />
+              <node concept="2Ry0Ak" id="VPJ_48XHEt" role="2Ry0An">
+                <property role="2Ry0Am" value="Platforms" />
+                <node concept="2Ry0Ak" id="VPJ_48XHE$" role="2Ry0An">
+                  <property role="2Ry0Am" value="MPS 3.3" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
     </node>
     <node concept="398rNT" id="4MR$$QmqomQ" role="1l3spd">
       <property role="TrG5h" value="artifacts.root" />
-      <node concept="398BVA" id="7cVn2sAa3Di" role="398pKh">
-        <ref role="398BVh" node="7cVn2sAa3K4" resolve="mbeddr.github.core.home" />
-        <node concept="2Ry0Ak" id="7cVn2sAa3MK" role="iGT6I">
-          <property role="2Ry0Am" value="artifacts" />
+      <node concept="55IIr" id="VPJ_48XHGe" role="398pKh">
+        <node concept="2Ry0Ak" id="VPJ_48XHGf" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="VPJ_48XHGg" role="2Ry0An">
+            <property role="2Ry0Am" value=".." />
+            <node concept="2Ry0Ak" id="VPJ_48XHGh" role="2Ry0An">
+              <property role="2Ry0Am" value="MPS" />
+              <node concept="2Ry0Ak" id="VPJ_48XHHa" role="2Ry0An">
+                <property role="2Ry0Am" value="Artifacts" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -448,6 +531,32 @@
         <ref role="398BVh" node="4MR$$QmqomQ" resolve="artifacts.root" />
         <node concept="2Ry0Ak" id="7cVn2sAakkW" role="iGT6I">
           <property role="2Ry0Am" value="com.mbeddr.allInOne" />
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="VPJ_48Y8bl" role="1l3spd">
+      <property role="TrG5h" value="org.clafer.mps" />
+      <node concept="55IIr" id="VPJ_48Y8f9" role="398pKh">
+        <node concept="2Ry0Ak" id="VPJ_48Y8fg" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="VPJ_48Y8fn" role="2Ry0An">
+            <property role="2Ry0Am" value="claferMPS" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="VPJ_48Y88s" role="1l3spd">
+      <property role="TrG5h" value="org.clafer.allInOne.artifacts" />
+      <node concept="398BVA" id="VPJ_48Y8fu" role="398pKh">
+        <ref role="398BVh" node="VPJ_48Y8bl" resolve="org.clafer.mps" />
+        <node concept="2Ry0Ak" id="VPJ_48Y8f_" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="VPJ_48Y8fG" role="2Ry0An">
+            <property role="2Ry0Am" value="artifacts" />
+            <node concept="2Ry0Ak" id="VPJ_48Y8iK" role="2Ry0An">
+              <property role="2Ry0Am" value="org.clafer.all" />
+            </node>
+          </node>
         </node>
       </node>
     </node>

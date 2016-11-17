@@ -3572,6 +3572,11 @@
             <ref role="1NtTu8" to="smma:2zEjgGwpc07" />
           </node>
         </node>
+        <node concept="2reCLy" id="VPJ_48V6uU" role="2reCL6">
+          <node concept="3F0A7n" id="VPJ_48V6ve" role="2reSmM">
+            <ref role="1NtTu8" to="smma:VPJ_48UZmb" resolve="frequency" />
+          </node>
+        </node>
         <node concept="2reCLy" id="2zEjgGwjI5C" role="2reCL6">
           <node concept="3F1sOY" id="2zEjgGwjI6e" role="2reSmM">
             <ref role="1NtTu8" to="smma:7Mf_WfKo6Vu" />
@@ -3656,6 +3661,9 @@
         </node>
         <node concept="2rfbtV" id="5A7sq$BOPzN" role="2rfbqz">
           <property role="2rfbtB" value="Type" />
+        </node>
+        <node concept="2rfbtV" id="VPJ_48VcZ4" role="2rfbqz">
+          <property role="2rfbtB" value="Frequency" />
         </node>
         <node concept="2rfbtV" id="2hmLFg9RH3$" role="2rfbqz">
           <property role="2rfbtB" value="Description" />
