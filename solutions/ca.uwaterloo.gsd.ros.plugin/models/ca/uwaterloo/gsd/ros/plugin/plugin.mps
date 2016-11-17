@@ -18,6 +18,7 @@
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions()" />
     <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
     <import index="gx6f" ref="r:46dadc39-3886-47b9-8e18-7046b9108c31(ca.uwaterloo.gsd.ros.editor)" />
+    <import index="smma" ref="r:6dd7a1b0-6b62-4500-801b-a912a27c7d20(ca.uwaterloo.gsd.ros.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -36,6 +37,7 @@
     </language>
     <language id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring">
       <concept id="3897771026684493688" name="com.mbeddr.mpsutil.refactoring.structure.ProjectionModeSwitcher" flags="ng" index="33ghlw">
+        <reference id="8575378964582005791" name="requiredConcept" index="2hhq6$" />
         <child id="8575378964581617586" name="modification" index="2hfP89" />
         <child id="8575378964581602954" name="options" index="2hfSGL" />
       </concept>
@@ -49,6 +51,7 @@
   <node concept="2DaZZR" id="7tQz_avvAvN" />
   <node concept="33ghlw" id="6JV68EXEnSM">
     <property role="TrG5h" value="ROS" />
+    <ref role="2hhq6$" to="smma:bl22kSm_0N" resolve="Message" />
     <node concept="33gmoH" id="6JV68EXEnSN" role="2hfSGL">
       <property role="33g7Lv" value="ROS: Show Byte Sizes" />
       <ref role="33glcW" to="gx6f:6JV68EXDDB4" resolve="ROS_Editor_Hints" />
