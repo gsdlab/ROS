@@ -9,6 +9,8 @@
   <property name="mbeddr.allInOne.artifacts" location="${artifacts.root}/com.mbeddr.allInOne" />
   <property name="org.clafer.mps" location="${basedir}/../claferMPS" />
   <property name="org.clafer.allInOne.artifacts" location="${org.clafer.mps}/build/artifacts/org.clafer.all" />
+  <property name="version" value="0.2" />
+  <property name="mbeddrVersion" value="253-MPS-3.3.5" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.jetpad" location="${mps.home}" />
   <property name="artifacts.mpsDiagramEditor" location="${mps.home}" />
@@ -33,6 +35,7 @@
   <property name="spawner.build" value="${import.com.mbeddr.allInOne.spawner.build}" />
   <property name="spawner.mbeddr.version" value="${import.com.mbeddr.allInOne.spawner.mbeddr.version}" />
   <property name="org.clafer.all.version" value="${import.org.clafer.all.org.clafer.all.version}" />
+  <property name="org.clafer.all.mbeddrVersion" value="${import.org.clafer.all.org.clafer.all.mbeddrVersion}" />
   <property name="env.JAVA_HOME" value="${java.home}/.." />
   <property name="jdk.home" value="${env.JAVA_HOME}" />
   
@@ -51,7 +54,7 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>ros</id>
         <name>ros</name>
-        <version>0.2</version>
+        <version>${version}</version>
         <depends>com.mbeddr.mpsutil</depends>
         <depends>com.mbeddr.core</depends>
         <depends>org.clafer.all</depends>
@@ -306,7 +309,7 @@
     <zip destfile="${build.layout}/ca.uwaterloo.gsd.ros.zip">
       <fileset dir="${build.tmp}/default/ca.uwaterloo.gsd.ros.zip" />
     </zip>
-    <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}mps-sl-all.versionNumber=${mps-sl-all.versionNumber}${line.separator}com.mbeddr.platform.major.version=${com.mbeddr.platform.major.version}${line.separator}com.mbeddr.platform.minor.version=${com.mbeddr.platform.minor.version}${line.separator}com.mbeddr.platform.build=${com.mbeddr.platform.build}${line.separator}com.mbeddr.platform.mbeddr.version=${com.mbeddr.platform.mbeddr.version}${line.separator}spawner.major.version=${spawner.major.version}${line.separator}spawner.minor.version=${spawner.minor.version}${line.separator}spawner.build=${spawner.build}${line.separator}spawner.mbeddr.version=${spawner.mbeddr.version}${line.separator}org.clafer.all.version=${org.clafer.all.version}</echo>
+    <echo file="${build.layout}/build.properties">ca.uwaterloo.gsd.ros.version=${version}${line.separator}ca.uwaterloo.gsd.ros.mbeddrVersion=${mbeddrVersion}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}mps-sl-all.versionNumber=${mps-sl-all.versionNumber}${line.separator}com.mbeddr.platform.major.version=${com.mbeddr.platform.major.version}${line.separator}com.mbeddr.platform.minor.version=${com.mbeddr.platform.minor.version}${line.separator}com.mbeddr.platform.build=${com.mbeddr.platform.build}${line.separator}com.mbeddr.platform.mbeddr.version=${com.mbeddr.platform.mbeddr.version}${line.separator}spawner.major.version=${spawner.major.version}${line.separator}spawner.minor.version=${spawner.minor.version}${line.separator}spawner.build=${spawner.build}${line.separator}spawner.mbeddr.version=${spawner.mbeddr.version}${line.separator}org.clafer.all.version=${org.clafer.all.version}${line.separator}org.clafer.all.mbeddrVersion=${org.clafer.all.mbeddrVersion}</echo>
   </target>
   
   <target name="buildDependents" />
@@ -314,8 +317,8 @@
   <target name="fetchDependencies">
     <mkdir dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip" />
     <unzip src="${artifacts.com.mbeddr.allInOne}/com.mbeddr.allInOne.zip" dest="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip" />
-    <mkdir dir="${build.tmp}/deps/org.clafer.all/org.clafer.all.zip" />
-    <unzip src="${artifacts.org.clafer.all}/org.clafer.all.zip" dest="${build.tmp}/deps/org.clafer.all/org.clafer.all.zip" />
+    <mkdir dir="${build.tmp}/deps/org.clafer.all/org.clafer.all-_dl__lbrace_version_rbrace_.zip" />
+    <unzip src="${artifacts.org.clafer.all}/org.clafer.all-${org.clafer.all.version}.zip" dest="${build.tmp}/deps/org.clafer.all/org.clafer.all-_dl__lbrace_version_rbrace_.zip" />
   </target>
   
   <target name="build" depends="assemble" />
@@ -337,7 +340,7 @@
   
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
-    <generate strictMode="true" parallelMode="true" parallelThreads="4" useInplaceTransform="true" hideWarnings="false" createStaticRefs="true" fork="true">
+    <generate strictMode="true" parallelMode="true" parallelThreads="4" useInplaceTransform="true" hideWarnings="false" createStaticRefs="true" fork="true" targetJavaVersion="1.6">
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <plugin path="${artifacts.mps}/plugins/mps-debugger-api" />
@@ -381,8 +384,8 @@
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-multiline" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-richtext" />
       <plugin path="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-tables" />
-      <plugin path="${build.tmp}/deps/org.clafer.all/org.clafer.all.zip/plugins/org.clafer.architecture.mps" />
-      <plugin path="${build.tmp}/deps/org.clafer.all/org.clafer.all.zip/plugins/org.clafer.core.mps" />
+      <plugin path="${build.tmp}/deps/org.clafer.all/org.clafer.all-_dl__lbrace_version_rbrace_.zip/plugins/org.clafer.architecture.mps" />
+      <plugin path="${build.tmp}/deps/org.clafer.all/org.clafer.all-_dl__lbrace_version_rbrace_.zip/plugins/org.clafer.core.mps" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
@@ -506,14 +509,14 @@
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-tables/languages/mps-tables/de.slisson.mps.tables.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-tables/languages/mps-tables/de.slisson.mps.tables.runtime.jar" />
-      <library file="${build.tmp}/deps/org.clafer.all/org.clafer.all.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.architecture.core.jar" />
-      <library file="${build.tmp}/deps/org.clafer.all/org.clafer.all.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.architecture.jar" />
-      <library file="${build.tmp}/deps/org.clafer.all/org.clafer.all.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.architecture.referencemodel.jar" />
-      <library file="${build.tmp}/deps/org.clafer.all/org.clafer.all.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.referenceModel.jar" />
-      <library file="${build.tmp}/deps/org.clafer.all/org.clafer.all.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.util.milestone.jar" />
-      <library file="${build.tmp}/deps/org.clafer.all/org.clafer.all.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.util.tags.jar" />
-      <library file="${build.tmp}/deps/org.clafer.all/org.clafer.all.zip/plugins/org.clafer.core.mps/languages/org.clafer.mps/org.clafer.core.jar" />
-      <library file="${build.tmp}/deps/org.clafer.all/org.clafer.all.zip/plugins/org.clafer.core.mps/languages/org.clafer.mps/org.clafer.expressions.jar" />
+      <library file="${build.tmp}/deps/org.clafer.all/org.clafer.all-_dl__lbrace_version_rbrace_.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.architecture.core.jar" />
+      <library file="${build.tmp}/deps/org.clafer.all/org.clafer.all-_dl__lbrace_version_rbrace_.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.architecture.jar" />
+      <library file="${build.tmp}/deps/org.clafer.all/org.clafer.all-_dl__lbrace_version_rbrace_.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.architecture.referencemodel.jar" />
+      <library file="${build.tmp}/deps/org.clafer.all/org.clafer.all-_dl__lbrace_version_rbrace_.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.referenceModel.jar" />
+      <library file="${build.tmp}/deps/org.clafer.all/org.clafer.all-_dl__lbrace_version_rbrace_.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.util.milestone.jar" />
+      <library file="${build.tmp}/deps/org.clafer.all/org.clafer.all-_dl__lbrace_version_rbrace_.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.util.tags.jar" />
+      <library file="${build.tmp}/deps/org.clafer.all/org.clafer.all-_dl__lbrace_version_rbrace_.zip/plugins/org.clafer.core.mps/languages/org.clafer.mps/org.clafer.core.jar" />
+      <library file="${build.tmp}/deps/org.clafer.all/org.clafer.all-_dl__lbrace_version_rbrace_.zip/plugins/org.clafer.core.mps/languages/org.clafer.mps/org.clafer.expressions.jar" />
       <chunk>
         <module file="${basedir}/languages/ca.uwaterloo.gsd.ros/ca.uwaterloo.gsd.ros.mpl" />
         <module file="${basedir}/languages/ca.uwaterloo.gsd.ros.diagrams/ca.uwaterloo.gsd.ros.diagrams.mpl" />
@@ -545,7 +548,7 @@
   <target name="java.compile.ca.uwaterloo.gsd.ros.std_msgs" depends="fetchDependencies">
     <mkdir dir="${basedir}/solutions/ca.uwaterloo.gsd.ros.std_msgs/source_gen" />
     <mkdir dir="${build.tmp}/java/out/ca.uwaterloo.gsd.ros.std_msgs" />
-    <javac destdir="${build.tmp}/java/out/ca.uwaterloo.gsd.ros.std_msgs" fork="true" encoding="utf8" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/ca.uwaterloo.gsd.ros.std_msgs" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/solutions/ca.uwaterloo.gsd.ros.std_msgs/source_gen" />
@@ -580,12 +583,15 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/ca.uwaterloo.gsd.ros.std_msgs">
+      <fileset dir="${basedir}/solutions/ca.uwaterloo.gsd.ros.std_msgs/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.ca.uwaterloo.gsd.ros.common_msgs" depends="fetchDependencies">
     <mkdir dir="${basedir}/solutions/ca.uwaterloo.gsd.ros.common_msgs/source_gen" />
     <mkdir dir="${build.tmp}/java/out/ca.uwaterloo.gsd.ros.common_msgs" />
-    <javac destdir="${build.tmp}/java/out/ca.uwaterloo.gsd.ros.common_msgs" fork="true" encoding="utf8" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/ca.uwaterloo.gsd.ros.common_msgs" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/solutions/ca.uwaterloo.gsd.ros.common_msgs/source_gen" />
@@ -620,12 +626,15 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/ca.uwaterloo.gsd.ros.common_msgs">
+      <fileset dir="${basedir}/solutions/ca.uwaterloo.gsd.ros.common_msgs/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.ca.uwaterloo.gsd.ros.plugin" depends="java.compile.ca.uwaterloo.gsd.ros, fetchDependencies">
     <mkdir dir="${basedir}/solutions/ca.uwaterloo.gsd.ros.plugin/source_gen" />
     <mkdir dir="${build.tmp}/java/out/ca.uwaterloo.gsd.ros.plugin" />
-    <javac destdir="${build.tmp}/java/out/ca.uwaterloo.gsd.ros.plugin" fork="true" encoding="utf8" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/ca.uwaterloo.gsd.ros.plugin" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/solutions/ca.uwaterloo.gsd.ros.plugin/source_gen" />
@@ -683,12 +692,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/ca.uwaterloo.gsd.ros.plugin">
+      <fileset dir="${basedir}/solutions/ca.uwaterloo.gsd.ros.plugin/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.ca.uwaterloo.gsd.ros" depends="fetchDependencies">
     <mkdir dir="${basedir}/languages/ca.uwaterloo.gsd.ros/source_gen" />
     <mkdir dir="${build.tmp}/java/out/ca.uwaterloo.gsd.ros" />
-    <javac destdir="${build.tmp}/java/out/ca.uwaterloo.gsd.ros" fork="true" encoding="utf8" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/ca.uwaterloo.gsd.ros" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/ca.uwaterloo.gsd.ros/source_gen" />
@@ -754,12 +766,15 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-apache-commons/languages/mps-apache-commons/org.apache.commons.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/ca.uwaterloo.gsd.ros">
+      <fileset dir="${basedir}/languages/ca.uwaterloo.gsd.ros/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.ca.uwaterloo.gsd.ros#1139250107225569088" depends="java.compile.ca.uwaterloo.gsd.ros, fetchDependencies">
     <mkdir dir="${basedir}/languages/ca.uwaterloo.gsd.ros/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/ca.uwaterloo.gsd.ros#1139250107225569088" />
-    <javac destdir="${build.tmp}/java/out/ca.uwaterloo.gsd.ros#1139250107225569088" fork="true" encoding="utf8" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/ca.uwaterloo.gsd.ros#1139250107225569088" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/ca.uwaterloo.gsd.ros/generator/source_gen" />
@@ -816,12 +831,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/ca.uwaterloo.gsd.ros#1139250107225569088">
+      <fileset dir="${basedir}/languages/ca.uwaterloo.gsd.ros/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.ca.uwaterloo.gsd.ros.diagrams" depends="java.compile.ca.uwaterloo.gsd.ros, fetchDependencies">
     <mkdir dir="${basedir}/languages/ca.uwaterloo.gsd.ros.diagrams/source_gen" />
     <mkdir dir="${build.tmp}/java/out/ca.uwaterloo.gsd.ros.diagrams" />
-    <javac destdir="${build.tmp}/java/out/ca.uwaterloo.gsd.ros.diagrams" fork="true" encoding="utf8" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/ca.uwaterloo.gsd.ros.diagrams" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/ca.uwaterloo.gsd.ros.diagrams/source_gen" />
@@ -890,21 +908,24 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
-        <fileset file="${build.tmp}/deps/org.clafer.all/org.clafer.all.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.architecture.jar" />
-        <fileset file="${build.tmp}/deps/org.clafer.all/org.clafer.all.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.architecture.core.jar" />
-        <fileset file="${build.tmp}/deps/org.clafer.all/org.clafer.all.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.architecture.referencemodel.jar" />
-        <fileset file="${build.tmp}/deps/org.clafer.all/org.clafer.all.zip/plugins/org.clafer.core.mps/languages/org.clafer.mps/org.clafer.core.jar" />
-        <fileset file="${build.tmp}/deps/org.clafer.all/org.clafer.all.zip/plugins/org.clafer.core.mps/languages/org.clafer.mps/org.clafer.expressions.jar" />
-        <fileset file="${build.tmp}/deps/org.clafer.all/org.clafer.all.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.util.milestone.jar" />
-        <fileset file="${build.tmp}/deps/org.clafer.all/org.clafer.all.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.util.tags.jar" />
+        <fileset file="${build.tmp}/deps/org.clafer.all/org.clafer.all-_dl__lbrace_version_rbrace_.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.architecture.jar" />
+        <fileset file="${build.tmp}/deps/org.clafer.all/org.clafer.all-_dl__lbrace_version_rbrace_.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.architecture.core.jar" />
+        <fileset file="${build.tmp}/deps/org.clafer.all/org.clafer.all-_dl__lbrace_version_rbrace_.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.architecture.referencemodel.jar" />
+        <fileset file="${build.tmp}/deps/org.clafer.all/org.clafer.all-_dl__lbrace_version_rbrace_.zip/plugins/org.clafer.core.mps/languages/org.clafer.mps/org.clafer.core.jar" />
+        <fileset file="${build.tmp}/deps/org.clafer.all/org.clafer.all-_dl__lbrace_version_rbrace_.zip/plugins/org.clafer.core.mps/languages/org.clafer.mps/org.clafer.expressions.jar" />
+        <fileset file="${build.tmp}/deps/org.clafer.all/org.clafer.all-_dl__lbrace_version_rbrace_.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.util.milestone.jar" />
+        <fileset file="${build.tmp}/deps/org.clafer.all/org.clafer.all-_dl__lbrace_version_rbrace_.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.util.tags.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/ca.uwaterloo.gsd.ros.diagrams">
+      <fileset dir="${basedir}/languages/ca.uwaterloo.gsd.ros.diagrams/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.ca.uwaterloo.gsd.ros.diagrams#3288194778604846174" depends="java.compile.ca.uwaterloo.gsd.ros, java.compile.ca.uwaterloo.gsd.ros.diagrams, fetchDependencies">
     <mkdir dir="${basedir}/languages/ca.uwaterloo.gsd.ros.diagrams/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/ca.uwaterloo.gsd.ros.diagrams#3288194778604846174" />
-    <javac destdir="${build.tmp}/java/out/ca.uwaterloo.gsd.ros.diagrams#3288194778604846174" fork="true" encoding="utf8" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/ca.uwaterloo.gsd.ros.diagrams#3288194778604846174" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/ca.uwaterloo.gsd.ros.diagrams/generator/source_gen" />
@@ -962,15 +983,18 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
-        <fileset file="${build.tmp}/deps/org.clafer.all/org.clafer.all.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.architecture.jar" />
-        <fileset file="${build.tmp}/deps/org.clafer.all/org.clafer.all.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.architecture.core.jar" />
-        <fileset file="${build.tmp}/deps/org.clafer.all/org.clafer.all.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.architecture.referencemodel.jar" />
-        <fileset file="${build.tmp}/deps/org.clafer.all/org.clafer.all.zip/plugins/org.clafer.core.mps/languages/org.clafer.mps/org.clafer.core.jar" />
-        <fileset file="${build.tmp}/deps/org.clafer.all/org.clafer.all.zip/plugins/org.clafer.core.mps/languages/org.clafer.mps/org.clafer.expressions.jar" />
-        <fileset file="${build.tmp}/deps/org.clafer.all/org.clafer.all.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.util.milestone.jar" />
-        <fileset file="${build.tmp}/deps/org.clafer.all/org.clafer.all.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.util.tags.jar" />
+        <fileset file="${build.tmp}/deps/org.clafer.all/org.clafer.all-_dl__lbrace_version_rbrace_.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.architecture.jar" />
+        <fileset file="${build.tmp}/deps/org.clafer.all/org.clafer.all-_dl__lbrace_version_rbrace_.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.architecture.core.jar" />
+        <fileset file="${build.tmp}/deps/org.clafer.all/org.clafer.all-_dl__lbrace_version_rbrace_.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.architecture.referencemodel.jar" />
+        <fileset file="${build.tmp}/deps/org.clafer.all/org.clafer.all-_dl__lbrace_version_rbrace_.zip/plugins/org.clafer.core.mps/languages/org.clafer.mps/org.clafer.core.jar" />
+        <fileset file="${build.tmp}/deps/org.clafer.all/org.clafer.all-_dl__lbrace_version_rbrace_.zip/plugins/org.clafer.core.mps/languages/org.clafer.mps/org.clafer.expressions.jar" />
+        <fileset file="${build.tmp}/deps/org.clafer.all/org.clafer.all-_dl__lbrace_version_rbrace_.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.util.milestone.jar" />
+        <fileset file="${build.tmp}/deps/org.clafer.all/org.clafer.all-_dl__lbrace_version_rbrace_.zip/plugins/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.util.tags.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/ca.uwaterloo.gsd.ros.diagrams#3288194778604846174">
+      <fileset dir="${basedir}/languages/ca.uwaterloo.gsd.ros.diagrams/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="cleanSources">

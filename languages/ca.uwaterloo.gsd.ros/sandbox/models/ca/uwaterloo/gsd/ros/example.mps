@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="h1eq" ref="r:8ad67177-f299-44f6-a52f-b7bc5164b85f(ca.uwaterloo.gsd.ros.common_msgs.geometry_msgs)" />
+    <import index="bkt4" ref="r:b8857e95-b5ad-4233-9354-d4e45d6cd55a(ca.uwaterloo.gsd.ros.std_msgs.std_msgs)" implicit="true" />
   </imports>
   <registry>
     <language id="73b2b904-2958-48f1-8732-4d9d995324d8" name="ca.uwaterloo.gsd.ros">
@@ -254,6 +255,122 @@
         <ref role="3m97_r" node="4M57Cl_LF0k" resolve="Template_msg" />
       </node>
     </node>
+  </node>
+  <node concept="UzPwm" id="3WzxVWscLFV">
+    <property role="TrG5h" value="M1" />
+    <node concept="2KhRzL" id="3WzxVWscLFX" role="2KjHO4">
+      <property role="TrG5h" value="x" />
+      <node concept="2fgwQN" id="3WzxVWscLFW" role="3m7Cf4" />
+      <node concept="3TlMh9" id="3WzxVWscLG7" role="3m6zAC">
+        <property role="2hmy$m" value="0" />
+      </node>
+    </node>
+    <node concept="2KhRzL" id="3WzxVWscLGm" role="2KjHO4">
+      <property role="TrG5h" value="y" />
+      <node concept="2fgwQN" id="3WzxVWscLGk" role="3m7Cf4" />
+      <node concept="3TlMh9" id="3WzxVWscLGz" role="3m6zAC">
+        <property role="2hmy$m" value="0" />
+      </node>
+    </node>
+    <node concept="2KhRzL" id="3WzxVWscLGP" role="2KjHO4">
+      <property role="TrG5h" value="z" />
+      <node concept="2fgwQN" id="3WzxVWscLGN" role="3m7Cf4" />
+      <node concept="3TlMh9" id="3WzxVWscLH5" role="3m6zAC">
+        <property role="2hmy$m" value="0" />
+      </node>
+    </node>
+    <node concept="UzEYP" id="3WzxVWscLHd" role="2KjHO4" />
+    <node concept="2KhRzL" id="3WzxVWscLHA" role="2KjHO4">
+      <property role="TrG5h" value="cell_width" />
+      <node concept="3m6E2q" id="3WzxVWscLH$" role="3m7Cf4" />
+    </node>
+    <node concept="2KhRzL" id="3WzxVWscLI7" role="2KjHO4">
+      <property role="TrG5h" value="cell_height" />
+      <node concept="3m6E2q" id="3WzxVWscLI5" role="3m7Cf4" />
+    </node>
+    <node concept="2KhRzL" id="3WzxVWscLIG" role="2KjHO4">
+      <property role="TrG5h" value="cells" />
+      <node concept="3pPFTo" id="3WzxVWscLJ2" role="3m7Cf4">
+        <property role="3FkInv" value="0" />
+        <node concept="3m97_4" id="3WzxVWscLIE" role="3pPFT5">
+          <ref role="3m97_r" to="h1eq:7cVn2sAa0AG" resolve="Point" />
+        </node>
+        <node concept="3TlMh9" id="1hJrUfbqdhQ" role="1ldbUH">
+          <property role="2hmy$m" value="4" />
+        </node>
+      </node>
+    </node>
+    <node concept="UzEYP" id="3WzxVWscLKk" role="2KjHO4" />
+    <node concept="UzEYP" id="3WzxVWscLKB" role="2KjHO4" />
+    <node concept="UzEYP" id="3WzxVWscLKV" role="2KjHO4" />
+    <node concept="UzEYP" id="3WzxVWscLLg" role="2KjHO4" />
+    <node concept="UzEYP" id="3WzxVWscLLA" role="2KjHO4" />
+    <node concept="UzEYP" id="3WzxVWscLLX" role="2KjHO4" />
+    <node concept="UzEYP" id="3WzxVWscLMl" role="2KjHO4" />
+  </node>
+  <node concept="UzPwm" id="3WzxVWscLJn">
+    <property role="TrG5h" value="M2" />
+    <node concept="2KhRzL" id="3WzxVWscLJp" role="2KjHO4">
+      <property role="TrG5h" value="header" />
+      <node concept="3m97_4" id="3WzxVWscLJo" role="3m7Cf4">
+        <ref role="3m97_r" to="bkt4:7cVn2sA94Li" resolve="Header" />
+      </node>
+    </node>
+    <node concept="2KhRzL" id="3WzxVWscLJA" role="2KjHO4">
+      <property role="TrG5h" value="vector" />
+      <node concept="3m97_4" id="3WzxVWscLJ$" role="3m7Cf4">
+        <ref role="3m97_r" to="h1eq:7cVn2sAa0Gy" resolve="Vector3" />
+      </node>
+    </node>
+    <node concept="2KhRzL" id="3WzxVWscQ$3" role="2KjHO4">
+      <property role="TrG5h" value="sa" />
+      <node concept="3pPFTo" id="3WzxVWscQ$Y" role="3m7Cf4">
+        <property role="3FkInv" value="0" />
+        <node concept="3m6E2q" id="3WzxVWscQ$1" role="3pPFT5" />
+        <node concept="3TlMh9" id="3WzxVWscQ_Y" role="1ldbUH">
+          <property role="2hmy$m" value="5" />
+        </node>
+      </node>
+    </node>
+    <node concept="3FnDly" id="3WzxVWscLJW" role="2KjHO4">
+      <ref role="3Fjbkc" node="3WzxVWscLFV" resolve="M1" />
+      <node concept="3FnBE_" id="3WzxVWscLK4" role="3Fg3zG">
+        <ref role="3Fglv4" node="3WzxVWscLFX" resolve="x" />
+        <node concept="3TlMh9" id="3WzxVWscLPP" role="1U2Fpt">
+          <property role="2hmy$m" value="20" />
+        </node>
+      </node>
+      <node concept="3FnBE_" id="3WzxVWscLK5" role="3Fg3zG">
+        <ref role="3Fglv4" node="3WzxVWscLGm" resolve="y" />
+      </node>
+      <node concept="3FnBE_" id="3WzxVWscLK6" role="3Fg3zG">
+        <ref role="3Fglv4" node="3WzxVWscLGP" resolve="z" />
+      </node>
+      <node concept="3FnBE_" id="3WzxVWscLK7" role="3Fg3zG">
+        <ref role="3Fglv4" node="3WzxVWscLHA" resolve="cell_width" />
+        <node concept="3TlMh9" id="3WzxVWscLPW" role="1U2Fpt">
+          <property role="2hmy$m" value="10" />
+        </node>
+      </node>
+      <node concept="3FnBE_" id="3WzxVWscLK8" role="3Fg3zG">
+        <ref role="3Fglv4" node="3WzxVWscLI7" resolve="cell_height" />
+        <node concept="3TlMh9" id="3WzxVWscLQ2" role="1U2Fpt">
+          <property role="2hmy$m" value="10" />
+        </node>
+      </node>
+      <node concept="3FnBE_" id="3WzxVWscLK9" role="3Fg3zG">
+        <ref role="3Fglv4" node="3WzxVWscLIG" resolve="cells" />
+      </node>
+    </node>
+    <node concept="UzEYP" id="3WzxVWscLMI" role="2KjHO4" />
+    <node concept="UzEYP" id="3WzxVWscLMW" role="2KjHO4" />
+    <node concept="UzEYP" id="3WzxVWscLNb" role="2KjHO4" />
+    <node concept="UzEYP" id="3WzxVWscLNr" role="2KjHO4" />
+    <node concept="UzEYP" id="3WzxVWscLNG" role="2KjHO4" />
+    <node concept="UzEYP" id="3WzxVWscLNY" role="2KjHO4" />
+    <node concept="UzEYP" id="3WzxVWscLOh" role="2KjHO4" />
+    <node concept="UzEYP" id="3WzxVWscLO_" role="2KjHO4" />
+    <node concept="UzEYP" id="3WzxVWscLOU" role="2KjHO4" />
   </node>
 </model>
 
